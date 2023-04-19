@@ -1,15 +1,15 @@
 # 🚀 Grupo 4 | Pedidos Ya
 
 # 📒 Integrantes:
-|---------------| 
+
 | Walter Liendo | 
 |---------------| 
-| Miguel Castro | 
-|---------------| 
-| Nicolás Juarez | 
-|---------------| 
-| gustín Garrido | 
-|---------------| 
+| Miguel Castro |
+|---------------|
+| Nicolás Juarez |
+|---------------|
+| Agustín Garrido |
+|---------------|
 
 # 📝 Descripción:
 
