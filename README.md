@@ -3,8 +3,11 @@
 # 📒 Integrantes:
 |---------------| 
 | Walter Liendo | 
+|---------------| 
 | Miguel Castro | 
+|---------------| 
 | Nicolás Juarez | 
+|---------------| 
 | gustín Garrido | 
 |---------------| 
 
