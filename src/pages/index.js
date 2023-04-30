@@ -1,12 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
 import styles from '@/styles/Home.module.css';
-import useScrollTop from '@/components/hooks/useScrollTop';
-import BarraNav from '@/components/navbar/navbar';
 import { Button, Form } from 'react-bootstrap';
+import Barra from '@/components/nav';
+
  
 export default function Home() {
-  useScrollTop();
+
   return (
     <div style={{ backgroundImage: "url(/background.png)", backgroundRepeat: 'no-repeat'}}>
       <Head>
@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
 
       <main className={`${styles.main}`}>
-      <BarraNav />
+      <Barra />
 
     <div className="titulos">
       <h1>¡Pedí lo que quieras!
@@ -26,11 +26,11 @@ export default function Home() {
       <Form className="d-flex">
             <Form.Control
               type="search"
-              placeholder="Search"
+              placeholder="Ingrese su búsqueda..."
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-warning">Search</Button>
+            <Button variant="outline-warning">Buscar</Button>
           </Form>
       </div>
       
