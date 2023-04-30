@@ -40,13 +40,13 @@ const Login = () => {
             <LazyLoadImage src={'../motito.jpg'} alt="" className="motito" />
           </div>
         <div className="container2">
-            <h2 className='text-3xl font-medium'>Join Today</h2>
+            <h2 className='text-3xl font-medium'>Pedilo Ya!!</h2>
             <div className='py-4'>
-                <h3 className='py-4'>Sign in with one of the providers</h3>
+                <h3 className='py-4'>Elija su forma mas cómoda de registrarse.</h3>
             </div>
             <div className='flex flex-col gap-4'>
                 <button onClick={GoogleLogin} className='text-white bg-gray-700 p-4 w-full font-medium rounded-lg flex align-middle gap-2'>
-                    <FcGoogle className='text-2xl' /> Sign in with Google
+                    <FcGoogle className='text-2xl' />Ingrese con Google
                 </button>
             </div>
             </div>      </div>      </div>
