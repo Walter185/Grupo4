@@ -1,0 +1,299 @@
+.rounded-background {
+    background-color: var(--color);
+    display: block;
+    position: absolute;
+    border-radius: 0 50% 50% 0;
+    height: 140%;
+    top: -30%;
+    right: 45%;
+    width: 100%;
+    opacity: 20%;
+}
+
+.other-logins{
+    width: 300px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.back-div{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    fill: var(--color);
+}
+
+.btn-other{
+    background: #fff;
+    display: inline-flex;
+    color: #717171;
+    font-weight: 600;
+    height: 40px;
+    width: 130px;
+}
+
+.other-logins a{
+    margin: 0;
+    height: 40px;
+}
+
+.btn-other:hover:enabled{
+    background-color: #f7f7f7;
+}
+
+.error-div{
+    padding: 20px;
+    text-align: center;
+    color: #f44336;
+    font-size: 0.75em;
+    background-color: #d32f2f41;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 5px;
+}
+
+.container-login .container .login-right .login-container a{
+    font-size: 16px;
+    color: var(--p-color);
+}
+.container-login .container .login-right .login-container a:hover{
+    text-decoration: underline;
+}
+.container2 {
+    margin-top: 40px;
+    text-align: center;
+}
+.container2 button {
+    background: green;
+}
+
+.container-login{
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+}
+
+.container-login .container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    gap: 5%;
+}
+
+.container-login .container .title{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.btn-facebook{
+    background: #4065b4;
+    color: #fff;
+    display: inline-flex;
+}
+
+.btn-facebook:hover:enabled {
+    background: #6081c7;
+}
+
+.btn-google{
+    background: #fff;
+    display: inline-flex;
+    color: #717171;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 5%), 0 4px 16px rgb(0 0 0 / 6%);
+}
+
+.btn-google:hover:enabled {
+    background: #f7f7f7;
+}
+
+.btn-facebook svg{
+    color: #fff;
+    fill: #fff;
+    width: 100%;
+    height: auto;
+}
+
+.btn-google svg{
+    color: #fff;
+    fill: #fff;
+    width: 100%;
+    height: auto;
+}
+
+.icon-login{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+
+.login-container{
+    background-color: white;
+    width: 510px;
+    height: 350px;
+    padding: 40px;
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-login .container .image-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+}
+.motito {
+    width: 40em;
+}
+.desc{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+    color: #717171;
+}
+
+.container .image-left .banner{
+    margin: auto;
+    height: 600px;
+    width: auto;
+    opacity: 100%;
+    z-index: 2;
+}
+
+.container .login-right{
+    display: flex;
+    align-items: center;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    
+    .container-login .container .login-right{
+        display: flex;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .container-login .container .login-right{
+        display: flex;
+    }
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .container-login .container .image-left {
+        display: none;
+    }
+
+    .container .login-right{
+        width: 100%;
+    }
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .container-login .container .image-left{
+        display: none;
+    }
+
+    .container .login-right{
+        width: 100%;
+    }
+
+    .rounded-background {
+        background-color: var(--color);
+        position: absolute;
+        display: flex;
+        border-radius: 50%;
+        height: 100vh;
+        transform: translate(-50%, -50%);
+        top: -20%;
+        left: 50%;
+        width: 100vh;
+        opacity: 20%;
+        z-index: 1;
+    }
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    .container-login .container .image-left{
+        display: none;
+    }
+
+    .container .login-right{
+        width: 100%;
+    }
+
+    .rounded-background {
+        background-color: var(--color);
+        position: absolute;
+        display: flex;
+        border-radius: 50%;
+        height: 100vh;
+        transform: translate(-50%, -50%);
+        top: -20%;
+        left: 50%;
+        width: 100vh;
+        opacity: 20%;
+    }
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .container .login-right{
+        display: none;
+    }
+
+    .container .login-right{
+        width: 100%;
+    }
+
+    .rounded-background {
+        background-color: var(--color);
+        position: absolute;
+        display: flex;
+        border-radius: 50%;
+        height: 100vh;
+        transform: translate(-50%, -50%);
+        top: -20%;
+        left: 50%;
+        width: 100vh;
+        opacity: 20%;
+        z-index: 1;
+    }
+  }
