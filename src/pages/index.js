@@ -3,6 +3,8 @@ import Head from 'next/head';
 import styles from '@/styles/Home.module.css';
 import { Button, Form } from 'react-bootstrap';
 import Barra from '@/components/nav';
+import Carousel from '@/components/Carousel';
+import Footer from '@/components/Footer';
 
  
 export default function Home() {
@@ -19,11 +21,11 @@ export default function Home() {
       <main className={`${styles.main}`}>
       <Barra />
 
-    <div className="titulos">
-      <h1>¡Pedí lo que quieras!
-        </h1>
-      <p>Restaurantes, mercados, farmacias, kioscos y muchos más.</p>
-      <Form className="d-flex">
+        <div className="titulos">
+          <h1>¡Pedí lo que quieras!
+          </h1>
+          <p>Restaurantes, mercados, farmacias, kioscos y muchos más.</p>
+          <Form className="d-flex">
             <Form.Control
               type="search"
               placeholder="Ingrese su búsqueda..."
@@ -32,9 +34,14 @@ export default function Home() {
             />
             <Button variant="outline-warning">Buscar</Button>
           </Form>
-      </div>
-      
+        </div>
       </main>
+      <body>
+        <Carousel />
+      </body>
+      <div>
+        <Footer />
+      </div>
     </div>
   )
 }
