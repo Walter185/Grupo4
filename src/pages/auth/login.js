@@ -5,6 +5,7 @@ import { auth } from '../../utils/firebase';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import Link from 'next/link';
 
 
 const Login = () => {
@@ -45,11 +46,32 @@ const Login = () => {
                 <h3 className='py-4'>Elija su forma mas cómoda de registrarse.</h3>
             </div>
             <div className='flex flex-col gap-4'>
-                <button onClick={GoogleLogin} className='text-white bg-gray-700 p-4 w-full font-medium rounded-lg flex align-middle gap-2'>
+                <button onClick={GoogleLogin} className='btn'>
                     <FcGoogle className='text-2xl' />Ingrese con Google
                 </button>
             </div>
-            </div>      </div>      </div>
+            <div className="other-logins">
+                    <Link href={"/login/telefone"}>
+                      <button className='btn btn-other lite-shadow' disabled>
+                        <span className="btn-label">Telefone</span>
+                      </button>
+                      </Link>
+                    <Link href={"/auth/loginMail"}>
+                      <button className='btn btn-other lite-shadow'>
+                        <span className="btn-label">Email</span>
+                      </button>
+                    </Link>
+                   
+                  </div>
+                   <p>Si no tiene cuenta, por favor registrese.</p>
+                  <div>
+                    <Link href={'/auth/register'} className="font-text">
+                      Registrate
+                    </Link>
+                  </div>   
+            </div>      
+            </div>      
+            </div>
     )
 }
 

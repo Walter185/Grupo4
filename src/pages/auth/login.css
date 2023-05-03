@@ -24,21 +24,23 @@
 }
 
 .btn-other{
-    background: #fff;
-    display: inline-flex;
+    background: #ffff !important;
+    border-color: black !important;
+    margin-top: 1em;
+    display: inline-block;
     color: #717171;
     font-weight: 600;
-    height: 40px;
+    /* height: 40px; */
     width: 130px;
 }
 
 .other-logins a{
-    margin: 0;
-    height: 40px;
+    margin-inline-start: 60px;
 }
 
 .btn-other:hover:enabled{
-    background-color: #f7f7f7;
+    background-color: #56be70 !important;
+    
 }
 
 .error-div{
@@ -195,24 +197,11 @@
     .container-login .container .login-right{
         display: flex;
     }
-  }
-  
-  /* 
-    ##Device = Tablets, Ipads (portrait)
-    ##Screen = B/w 768px to 1024px
-  */
-  
-  @media (min-width: 768px) and (max-width: 1024px) {
-    .container-login .container .image-left {
-        display: none;
-    }
 
-    .container .login-right{
-        width: 100%;
-    }
   }
   
-  /* 
+
+   /* 
     ##Device = Tablets, Ipads (landscape)
     ##Screen = B/w 768px to 1024px
   */
@@ -226,6 +215,7 @@
         width: 100%;
     }
 
+ 
     .rounded-background {
         background-color: var(--color);
         position: absolute;
@@ -248,6 +238,9 @@
   
   @media (min-width: 481px) and (max-width: 767px) {
     .container-login .container .image-left{
+        display: none;
+    }
+    .motito {
         display: none;
     }
 
@@ -283,6 +276,10 @@
         width: 100%;
     }
 
+    .motito {
+        display: none;
+    }
+    
     .rounded-background {
         background-color: var(--color);
         position: absolute;
