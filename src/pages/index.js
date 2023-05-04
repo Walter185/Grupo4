@@ -5,7 +5,7 @@ import { Button, Form } from 'react-bootstrap';
 import Barra from '@/components/nav';
 import Carousel from '@/components/Carousel';
 import Footer from '@/components/Footer';
-
+import Searchbar from '@/Searchbar/searchbar';
  
 export default function Home() {
 
@@ -26,13 +26,8 @@ export default function Home() {
           </h1>
           <p>Restaurantes, mercados, farmacias, kioscos y muchos más.</p>
           <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Ingrese su búsqueda..."
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-warning">Buscar</Button>
+          <Searchbar></Searchbar>
+           
           </Form>
         </div>
       </main>

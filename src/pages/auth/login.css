@@ -10,11 +10,6 @@
     opacity: 20%;
 }
 
-.other-logins{
-    width: 300px;
-    display: flex;
-    margin-bottom: 20px;
-}
 
 .back-div{
     position: absolute;
@@ -26,7 +21,6 @@
 .btn-other{
     background: #ffff !important;
     border-color: black !important;
-    margin-top: 1em;
     display: inline-block;
     color: #717171;
     font-weight: 600;
@@ -90,13 +84,13 @@
     text-align: center;
 }
 
-.btn-facebook{
-    background: #4065b4;
+.btn-mail{
+    background: #4065b4 !important;
     color: #fff;
     display: inline-flex;
 }
 
-.btn-facebook:hover:enabled {
+.btn-mail:hover:enabled {
     background: #6081c7;
 }
 
@@ -111,14 +105,14 @@
     background: #f7f7f7;
 }
 
-.btn-facebook svg{
+.btn-mail svg{
     color: #fff;
     fill: #fff;
     width: 100%;
     height: auto;
 }
 
-.btn-google svg{
+.btn-mail svg{
     color: #fff;
     fill: #fff;
     width: 100%;

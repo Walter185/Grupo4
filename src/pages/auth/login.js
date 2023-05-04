@@ -46,18 +46,14 @@ const Login = () => {
                 <h3 className='py-4'>Elija su forma mas cómoda de registrarse.</h3>
             </div>
             <div className='flex flex-col gap-4'>
-                <button onClick={GoogleLogin} className='btn'>
+                <button onClick={GoogleLogin} className='btn-other'>
                     <FcGoogle className='text-2xl' />Ingrese con Google
                 </button>
             </div>
-            <div className="other-logins">
-                    <Link href={"/login/telefone"}>
-                      <button className='btn btn-other lite-shadow' disabled>
-                        <span className="btn-label">Telefone</span>
-                      </button>
-                      </Link>
+            <div className='flex flex-col gap-4'>
+             
                     <Link href={"/auth/loginMail"}>
-                      <button className='btn btn-other lite-shadow'>
+                      <button className='btn-mail'>
                         <span className="btn-label">Email</span>
                       </button>
                     </Link>
@@ -65,8 +61,11 @@ const Login = () => {
                   </div>
                    <p>Si no tiene cuenta, por favor registrese.</p>
                   <div>
-                    <Link href={'/auth/register'} className="font-text">
-                      Registrate
+                   <Link href={'/auth/register'} className="font-text"> 
+                  <button className='btn-other'>
+                    
+                    <span className="btn-label">Registrarse</span>
+                  </button>
                     </Link>
                   </div>   
             </div>      
