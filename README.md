@@ -16,7 +16,7 @@ La página web cuenta con un login para que el usuario pueda ingresar, elegir la
 # 📑 Requisitos
 
 - ✅ Login/Logout.
-- ✅ Usar React.
+- ✅ Usar React. y Javascript
 - ✅ Usar Trello.
 - ✅ Crear un Repositorio.
 - ✅ Elegir una temática.
