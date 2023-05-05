@@ -53,14 +53,14 @@ const Barra = () => {
                       </Link>
                   )}
                   {user && (
+                      
                       <div className={`${styles.user}`} >
                           <Link href={'/dashboard'}>
-                            <a>{user.displayName}</a>
+                            <a>Bienvenido {user.displayName}!!</a>
                               <img src={user.photoURL} 
-                              alt="avatar" 
                               referrerPolicy='no-referrer'
                               width='50px'
-                              />
+                              /><a>  </a>
                           </Link>
                           <Link legacyBehavior href={'/auth/logout'}>
                           <a >

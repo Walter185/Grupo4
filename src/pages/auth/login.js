@@ -1,77 +1,124 @@
-import {FcGoogle} from 'react-icons/fc';
-import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
-import { useAuthState } from 'react-firebase-hooks/auth';
+import React from 'react';
+import {  signInWithPopup, 
+          createUserWithEmailAndPassword, 
+          onAuthStateChanged, 
+          signInWithEmailAndPassword,
+          signOut,
+          GoogleAuthProvider
+        } from "firebase/auth";
+import { useState }  from 'react';
 import { auth } from '../../utils/firebase';
+import { Router } from 'react-router-dom';
 import { useRouter } from 'next/router';
-import { useEffect } from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import {FcGoogle} from 'react-icons/fc';
+import WithHeaderAndQuoteExample from '@/components/Footer';
 import Link from 'next/link';
 
 
-const Login = () => {
-    const route = useRouter();
-    const [user, loading] = useAuthState(auth)
-    //Sign in with google
-    const goodleProvider = new GoogleAuthProvider();
+export default function loginMail() {
+  const route = useRouter();
+  const [registerEmail, setRegisterEmail] = useState("");
+  const [registerPassword, setRegisterPassword] = useState("");
+
+  const [loginEmail, setLoginEmail] = useState("");
+  const [loginPassword, setLoginPassword] = useState("");
+
+  const [user, setUser] = useState({});
+
+  const register = async () => {
+    try {
+      setRegisterEmail("");
+      setRegisterPassword("");
+      const user = await createUserWithEmailAndPassword(auth, registerEmail, registerPassword);
+      console.log(user);
+    } catch(error) {
+      console.log(error.message)
+    }
+  }
+
+  const login = async () => {
+    try {
+      const user = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
+      route.push('/')
+      console.log(user);
+    } catch(error) {
+      console.log(error.message);
+    }
+  }
+
+  const logout = async () => {
+    await signOut(auth);
+    console.log("user logged out");
+  }
+
+  React.useEffect(() => {
+    onAuthStateChanged(auth, (currentUser) => setUser(currentUser))
+  }, [])
+
+  const GoogleSignIn = async () => {
+    const provider = new GoogleAuthProvider();
+
+    const authorization = auth;
+    const result = await signInWithPopup(authorization, provider);
+
+    console.log(result);
+  }
+
+  const volver = event => {
+    route.push('/')
+  }
+
+  const iraRegistrarse = event => {
+    route.push('/auth/register')
+  }
+  const handleSubmit = event => {
+    console.log("handle submit rand")
+    event.preventDefault();
+    event.target.reset();
+  }
+
+  return (
+   
+    <div style={{ backgroundImage: "url(/background.png)", backgroundRepeat: 'no-repeat'}}>
+<div className='formLogin'>
+<form onSubmit={handleSubmit}>
+
+<h3><b><u>Iniciar sesión</u></b></h3>
+
+        <div className="form-group">
+            <label>Email</label>
+            <input
+                placeholder="Ingrese e-mail..."
+                onChange={(event) => {
+                  setLoginEmail(event.target.value)
+                }}
+                className="form-control"
+                required
+                type='email'
+              />
+        </div>
+        <div className="form-group">
+        <label>Password</label>
+              <input
+                placeholder="Password..."
+                onChange={(event) => {
+                  setLoginPassword(event.target.value)
+                }}
+                className="form-control"
+                required
+              />
+        </div>
     
-    const GoogleLogin = async () => {
-        try{
-            const result = await signInWithPopup(auth, goodleProvider)
-            route.push('/');
-        } catch (error) {
-            error
-        }
-    };
+       <br />
+        <button onClick={login} type="button"  className="btn btn-dark btn-lg btn-block">Login</button>
+        <a> </a><button type='button' onClick={iraRegistrarse} className="btn btn-dark btn-lg btn-block"> Registrarse</button>
+        <a> </a><button onClick={() => GoogleSignIn()} type="button" className="btn btn-dark btn-lg btn-block">Iniciar con Google</button>
+        <a> </a><button type='button' onClick={volver} className="btn btn-dark btn-lg btn-block"> Inicio</button>
+ </form>
+  <br/><br/><br/><br/><br/>
+</div><WithHeaderAndQuoteExample></WithHeaderAndQuoteExample>
+</div>
 
-    useEffect(() => {
-        if(user) {
-            route.push('/');
-        } else {
-            console.log('login');
-        }
-    }, [user])
-
-    return (
-        
-        <div className="container-login">
-          
-        <div className="container">
-        <div className="rounded-background"></div>
-          <div className="image-left">
-            <LazyLoadImage src={'../motito.jpg'} alt="" className="motito" />
-          </div>
-        <div className="container2">
-            <h2 className='text-3xl font-medium'>Pedilo Ya!!</h2>
-            <div className='py-4'>
-                <h3 className='py-4'>Elija su forma mas cómoda de registrarse.</h3>
-            </div>
-            <div className='flex flex-col gap-4'>
-                <button onClick={GoogleLogin} className='btn-other'>
-                    <FcGoogle className='text-2xl' />Ingrese con Google
-                </button>
-            </div>
-            <div className='flex flex-col gap-4'>
-             
-                    <Link href={"/auth/loginMail"}>
-                      <button className='btn-mail'>
-                        <span className="btn-label">Email</span>
-                      </button>
-                    </Link>
-                   
-                  </div>
-                   <p>Si no tiene cuenta, por favor registrese.</p>
-                  <div>
-                   <Link href={'/auth/register'} className="font-text"> 
-                  <button className='btn-other'>
-                    
-                    <span className="btn-label">Registrarse</span>
-                  </button>
-                    </Link>
-                  </div>   
-            </div>      
-            </div>      
-            </div>
-    )
+     
+  );
 }
-
-export default Login;
