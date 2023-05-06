@@ -175,9 +175,15 @@
   transform: translateZ(0);
 }
 
+.login {
+  cursor: pointer;
+}
+
 .logo {
   position: relative;
 }
+
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
