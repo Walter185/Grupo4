@@ -16,7 +16,7 @@ const Barra = () => {
 
         <Navbar.Brand href="/">
           <div>
-          <img src='pediloya.png' className={`${styles.logo}`}/> 
+          <img src='pediloya.png' alt='logo' className={`${styles.logo}`}/> 
           </div>
         </Navbar.Brand>
 
