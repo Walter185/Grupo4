@@ -1,8 +1,6 @@
 import { auth } from '../utils/firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useRouter } from 'next/router';
-import { BasePage } from './BasePage';
-import { DocumentSnapshot } from 'firebase/firestore';
 
 const Dashboard = () => {
     const [user, loading] = useAuthState(auth);

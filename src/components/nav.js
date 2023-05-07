@@ -3,7 +3,6 @@ import styles from '@/styles/Home.module.css';
 import Link from 'next/link';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from '../utils/firebase';
-import { AddressComponent } from './addressComponent';
 
 
 const Barra = () => {
@@ -27,7 +26,6 @@ const Barra = () => {
           </Navbar.Collapse>
           <Navbar.Collapse className="justify-content-end">
           <Nav.Link href="addressInput"></Nav.Link>
-          <ul>{user && (<AddressComponent />)}</ul>
           <Navbar.Text>
             <ul>
         
