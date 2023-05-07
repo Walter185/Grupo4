@@ -6,10 +6,10 @@ import Barra from '@/components/nav';
 import Carousel from '@/components/Carousel';
 import Footer from '@/components/Footer';
 import Searchbar from '@/components/searchbar';
-import useScrollTop from '../components/useScrollTop';
+
 
 export default function Home() {
-  useScrollTop();
+
   return (
     <div style={{ backgroundImage: "url(/background.png)", backgroundRepeat: 'no-repeat'}}>
       <Head>

@@ -60,7 +60,7 @@ export default function loginMail() {
 
     const authorization = auth;
     const result = await signInWithPopup(authorization, provider);
-
+    route.push('/')
     console.log(result);
   }
 
