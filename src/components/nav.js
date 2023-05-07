@@ -3,12 +3,12 @@ import styles from '@/styles/Home.module.css';
 import Link from 'next/link';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from '../utils/firebase';
+import { AddressComponent } from './addressComponent';
 
 
 const Barra = () => {
 
   const [ user, setUser ] = useAuthState(auth);
-  
      
     return (
       <Navbar bg="light" expand="lg">
@@ -21,13 +21,16 @@ const Barra = () => {
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        
         <Navbar.Collapse id="basic-navbar-nav">
                        
           </Navbar.Collapse>
           <Navbar.Collapse className="justify-content-end">
-          <Nav.Link href="#link">Link</Nav.Link>
-            <Navbar.Text>
+          <Nav.Link href="addressInput"></Nav.Link>
+          <ul>{user && (<AddressComponent />)}</ul>
+          <Navbar.Text>
             <ul>
+        
                   {!user && (
                     <Link legacyBehavior href={'/auth/login'}>
                         <div className={`${styles.login}`}>
@@ -41,7 +44,7 @@ const Barra = () => {
                           <NavDropdown title="Bienvenido a PediloYa " id="basic-nav-dropdown" className='dropdown-menu-left'>
                           <NavDropdown.Item href="#action/3.1">
                           <div>
-                            <a>Hola,  {user.displayName}  </a>
+                            <a>Hola,  {user.displayName}  {user.phoneNumber}</a>
                               <img src={user.photoURL} 
                               referrerPolicy='no-referrer'
                               width='40px'

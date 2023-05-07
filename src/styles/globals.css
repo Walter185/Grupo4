@@ -202,3 +202,161 @@ input:focus{
     padding-left: 30px !important;
     justify-items: space-between;
   }
+
+  .address-menu{
+    max-width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    color: var(--p-color);
+    margin-top: 20px;
+    margin-left: 20em;
+}
+
+
+.btn-save{
+    width: 80%;
+    font-weight: 600;
+    height: 50px;
+}
+
+#overlay-address {
+    position: fixed; /* Sit on top of the page content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: opacity .5s ease-in-out;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 99999;
+    cursor: auto;
+  }
+
+.title{
+    font-size: 14px;
+    font-weight: 600;
+    
+}
+
+.input-address{
+    background-color: #f7f7f7;
+    width: 80%;
+    align-items: center;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+.input-address .lupa{
+    width: 50px;
+    height: auto;
+    color: var(--color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-address .input-text{
+    font-size: 32px;
+    color: var(--color);
+    width: 90%;
+}
+
+.navbar .navs{
+    display: flex;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+ul{
+    min-width: 300px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+ul>li {
+    list-style: none;
+}
+
+.navs p{
+    font-size: .875rem;
+    font-weight: 500;
+}
+
+.navbar ol li{
+    display: block;
+    margin-left: 16px;
+    font-size: 16px;
+}
+
+.navbar img{
+    width: 50px;
+    height: auto;
+}
+
+.nav-center{
+    width: 33%;
+}
+
+.field{
+    font-size: 14px;
+    color: var(--p-color);
+    font-weight: 700;
+}
+
+.icon{
+    fill: var(--color);
+    width: 12px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.address-menu:hover{
+    cursor: pointer;
+}
+
+.address{
+    font-size: .875rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 90%;
+}
+
+.address-menu-open{
+    position: relative;
+    width: 600px;
+    height: 430px;
+    transition: top .5s ease-out;
+    background-color: white;
+    z-index: 3;
+    border-radius: 4px;
+    cursor: auto;
+    padding: 10px;
+}
+
+.address-menu-content{
+    margin-top: 10%;
+    display: flex;
+    width: 100%;
+    position: relative;
+    fill: var(--color);
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+}

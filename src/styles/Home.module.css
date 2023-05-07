@@ -13,8 +13,8 @@
     -webkit-filter: invert(1);
     filter: invert(1);
     object-fit: contain;
-    width: 8em;
-    height: fit-content;
+    width: 10em !important;
+    /* height: fit-content; */
     border-radius: 0%;
     left: 0;
 }

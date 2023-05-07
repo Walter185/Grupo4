@@ -2,15 +2,11 @@ import React from 'react';
 import {  signInWithPopup, 
           createUserWithEmailAndPassword, 
           onAuthStateChanged, 
-          signInWithEmailAndPassword,
-          signOut,
           GoogleAuthProvider,
           updateProfile
         } from "firebase/auth";
 import { useState }  from 'react';
 import { auth } from '../../utils/firebase';
-import { Router } from 'react-router-dom';
-import {FcGoogle} from 'react-icons/fc';
 import { useRouter } from 'next/router';
 import WithHeaderAndQuoteExample from '@/components/Footer';
 
@@ -20,8 +16,6 @@ export default function loginMail() {
   const [registerEmail, setRegisterEmail] = useState("");
   const [registerPassword, setRegisterPassword] = useState("");
   const [registerName, setRegisterName] = useState("");
-  const [loginEmail, setLoginEmail] = useState("");
-  const [loginPassword, setLoginPassword] = useState("");
 
   const [user, setUser] = useState({});
 
@@ -37,21 +31,6 @@ export default function loginMail() {
     } catch(error) {
       console.log(error.message)
     }
-  }
-
-  const login = async () => {
-    try {
-      const user = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
-      route.push('/')
-      console.log(user);
-    } catch(error) {
-      console.log(error.message);
-    }
-  }
-
-  const logout = async () => {
-    await signOut(auth);
-    console.log("user logged out");
   }
 
   React.useEffect(() => {
