@@ -25,12 +25,12 @@ const CartPage = () => {
       ) : (
         <>
           <div className={styles.header}>
-            <div>Image</div>
-            <div>Product</div>
-            <div>Price</div>
-            <div>Quantity</div>
-            <div>Actions</div>
-            <div>Total Price</div>
+            <div>Producto</div>
+            <div>Nombre</div>
+            <div>Precio</div>
+            <div>Cantidad</div>
+            <div>Agregar o quitar</div>
+            <div>Precio Total</div>
           </div>
           {cart.map((item) => (
             <div className={styles.body}>
@@ -54,7 +54,7 @@ const CartPage = () => {
               <p>$ {(item.quantity * item.price).toFixed(2)}</p>
             </div>
           ))}
-          <h2>Grand Total: $ {getTotalPrice().toFixed(2)}</h2>
+          <h2>Total a pagar: $ {getTotalPrice().toFixed(2)}</h2>
         </>
       )}
     </div>

@@ -11,17 +11,17 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <h6 className={styles.logo}>GamesKart</h6>
+      <h6 className={styles.logo}>PEDILOYA</h6>
       <ul className={styles.links}>
         <li className={styles.navlink}>
-          <Link href="/">Home</Link>
+          <Link href="/">Inicio</Link>
         </li>
         <li className={styles.navlink}>
-          <Link href="/shop">Shop</Link>
+          <Link href="/comidas">Comidas</Link>
         </li>
         <li className={styles.navlink}>
           <Link href="/cart">
-            <h1>Cart ({getItemsCount()})</h1>
+            <h1>Carrito ({getItemsCount()})</h1>
           </Link>
         </li>
       </ul>

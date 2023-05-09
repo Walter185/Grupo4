@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import ProductCard from '../../components/Card/ProductCard';
-import styles from '../ShopPage.module.css';
+import styles from '../ComidasPage.module.css';
 import { getProductsByCategory } from './../api/products/[category]';
 
 const CategoryPage = ({ products }) => {

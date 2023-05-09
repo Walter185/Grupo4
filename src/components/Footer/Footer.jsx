@@ -3,7 +3,7 @@ import styles from './Footer.module.css';
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      Copyright <span className={styles.brand}>GamesKart</span> &copy;{' '}
+      By <span className={styles.brand}>PediloYa</span> &copy;{' '}
       {new Date().getFullYear()}
     </footer>
   );
