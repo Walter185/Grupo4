@@ -1,4 +1,4 @@
-import Barra from './nav';
+/* import Barra from './nav';
 
 const Layout = ({children}) => {
     return (
@@ -9,4 +9,4 @@ const Layout = ({children}) => {
     )
 }
 
-export default Layout;
+export default Layout; */
