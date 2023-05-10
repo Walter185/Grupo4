@@ -1,6 +1,7 @@
 import { auth } from '../utils/firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useRouter } from 'next/router';
+import { getAdditionalUserInfo } from 'firebase/auth';
 
 const Dashboard = () => {
     const [user, loading] = useAuthState(auth);
@@ -35,7 +36,7 @@ const Dashboard = () => {
 
                 </div>
                 <div className='form-item'>
-                                    <h3 >Telefono: <span >{user.phoneNumber}</span></h3>
+                                    <h3 >Telefono: <span ></span></h3>
 
                 </div>
                 <div className='form-item'>
