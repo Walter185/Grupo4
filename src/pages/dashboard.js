@@ -1,8 +1,50 @@
 import { auth } from '../utils/firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useRouter } from 'next/router';
-import { getAdditionalUserInfo } from 'firebase/auth';
+import Link from 'next/link';
+import Head from 'next/head';
+import styled from 'styled-components';
+import WithHeaderAndQuoteExample from '@/components/Footer';
 
+
+const Div = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  text-align: center;
+
+  .title {
+    font-size: 64px;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    @media (max-width: 640px) {
+      font-size: 56px;
+    }
+  }
+
+  .text {
+    margin-top: 30px;
+  }
+
+  a {
+    display: block;
+    margin-top: 40px;
+    padding: 14px 42px;
+    text-decoration: none;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    background: #8e2de2;
+    background: -webkit-linear-gradient(to right, #8e2de2, #4a00e0);
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+`;
 const Dashboard = () => {
     const [user, loading] = useAuthState(auth);
     const route = useRouter();
@@ -16,45 +58,17 @@ const Dashboard = () => {
     if(!user) route.push('/auth/login')
     if(user)
         return (
-            <div style={{ backgroundImage: "url(/background.png)", backgroundRepeat: 'no-repeat', heigth:'100%'}}>
-  <br/>  <br/>
-            <div className='form-group-profile'>
-                <div className='form-item'>
-                                    <h1 >Bienvenido a Pedilo Ya, <img src={user.photoURL}></img></h1>
-                                    <br/>
-                </div>
-                <div className='form-item'>
-                                    <h3 >Nombre: <span >{user.displayName}</span></h3>
+            <>      
+            <Div>
+            <p className="title">Bienvenido a PediloYa {user.displayName}</p>
+            <p className="text">Utima conexion:{user.metadata.lastSignInTime}</p>
+            <p className="text">email: {user.email}</p>
+            <Link href="/">Volver</Link>
+            <br/><br/><br/><br/><br/><br/>
+           </Div>
+         <WithHeaderAndQuoteExample></WithHeaderAndQuoteExample>
+            </>
 
-                </div>
-                <div className='form-item'>
-                                    <h3 >email: <span >{user.email}</span></h3>
-
-                </div>
-                <div className='form-item'>
-                                    <h3 >ID: <span >{user.uid}</span></h3>
-
-                </div>
-                <div className='form-item'>
-                                    <h3 >Telefono: <span ></span></h3>
-
-                </div>
-                <div className='form-item'>
-                                    <h3 >Ultima conexion: <span >{user.metadata.lastSignInTime}</span></h3>
-
-                </div>
-                <div className='form-item'>
-                                    <h3 >Domicilio: <span ></span></h3>
-
-                </div>
-                <br/>  <br/>   <br/>  <br/>   <br/>  <br/>
-                <button  type='button' onClick={() => auth.signOut()} className="btn btn-dark btn-lg btn-block">
-                            Logout
-                </button>
-                <a> </a><button type='button' onClick={volver} className="btn btn-dark btn-lg btn-block"> Volver</button>
-
-            </div>
-            </div>
         )
 }
 

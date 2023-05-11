@@ -265,14 +265,7 @@ export default function loginMail() {
     console.log(result);
   }
 
-  const volver = event => {
-    route.push('/');
-  }
-
-  const iraRegistrarse = event => {
-    route.push('/auth/register')
-  }
-  const handleSubmit = event => {
+   const handleSubmit = event => {
     console.log("handle submit rand")
     event.preventDefault();
     event.target.reset();
@@ -310,7 +303,6 @@ export default function loginMail() {
                                 setLoginEmail(event.target.value)
                               }}
                               className="form-control"
-                              onBlur={() => setStartEmailValidation(false)}
                               />
                       </div>
                       <div className="form-group">
@@ -326,16 +318,16 @@ export default function loginMail() {
                               className="form-control"
                               required
                             />
-                      </div>
+                      </div><br/>
+                      <button onClick={login} type="button">Login</button> 
+
+                        </form> 
                       <p className="info">
-                No tiene cuenta? <Link href="/auth/register">Registrarse</Link>
-              </p>
-                    <br />
-                      <button onClick={login} type="button"  className="btn btn-dark btn-lg btn-block">Login</button>
-                      {/* <a> </a><button type='button' onClick={iraRegistrarse} className="btn btn-dark btn-lg btn-block"> Registrarse</button> */}
-                      <a> </a><button onClick={() => GoogleSignIn()} type="button" className="btn btn-dark btn-lg btn-block">Iniciar con Google</button>
-              </form>
-              <br/><br/><br/><br/>
+                      No tiene cuenta? <Link href="/auth/register">Registrarse</Link>
+                      </p>
+                  <br /><button onClick={() => GoogleSignIn()} type="button">Iniciar con Google</button>
+             
+              <br/><br/><br/>
             </div>
           </>
         )}
@@ -343,5 +335,5 @@ export default function loginMail() {
 </Div><WithHeaderAndQuoteExample></WithHeaderAndQuoteExample>
 </>
 
-)
+);
 }

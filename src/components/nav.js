@@ -79,7 +79,7 @@ const Barra = () => {
                           </NavDropdown.Item>
                          
                        </NavDropdown>
-                          </Container>
+                      </Container>
                   )}
                   
               </ul>
