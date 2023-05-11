@@ -12,6 +12,7 @@ import styled, { keyframes } from 'styled-components';
 import { auth } from '../../utils/firebase';
 import { useRouter } from 'next/router';
 import WithHeaderAndQuoteExample from '@/components/Footer';
+import { Button } from 'react-bootstrap';
 
 const MainNav = styled.div`
   font-size: 14px;
@@ -128,24 +129,6 @@ const Div = styled.div`
         }
       }
 
-      button {
-        font: inherit;
-        background: #8e2de2;
-        background: -webkit-linear-gradient(to right, #8e2de2, #4a00e0);
-        background: linear-gradient(to right, #8e2de2, #4a00e0);
-        color: white;
-        font-weight: 500;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 45px;
-        outline: none;
-        cursor: pointer;
-        border: none;
-        border-radius: 6px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
         .loader {
           width: 18px;
           height: 18px;
@@ -227,13 +210,6 @@ export default function loginMail() {
     console.log(result);
   }
 
-  const volver = event => {
-    route.push('/')
-  }
-
-  const iraLogin = event => {
-    route.push('/auth/login')
-  }
   const handleSubmit = event => {
     console.log("handle submit rand")
     event.preventDefault();
@@ -279,7 +255,7 @@ export default function loginMail() {
                         placeholder="Email..."
                         required
                         onChange={(event) => {
-                          setRegisterEmail(event.target.value)
+                        setRegisterEmail(event.target.value)
                         }}
                         className="form-control"
                       />
@@ -291,17 +267,17 @@ export default function loginMail() {
                         required
                         minLength={6}
                         onChange={(event) => {
-                          setRegisterPassword(event.target.value)
+                        setRegisterPassword(event.target.value)
                         }}
                         className="form-control"
                       />
               <br />   </div>
-               <a> </a><button onClick={register} type="submit">Registrarse</button>
+               <a> </a><Button onClick={register} type="submit">Registrarse</Button>
            </form>
               <p className="info">
                 Do you have an account? <Link href="/auth/login">Sign In</Link>
               </p><br/>
-              <button onClick={() => GoogleSignIn()} type="submit">Iniciar con Google</button>
+              <Button onClick={() => GoogleSignIn()} type="submit">Iniciar con Google</Button>
 
             <br/>
         </div>

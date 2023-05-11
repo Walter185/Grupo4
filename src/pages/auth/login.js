@@ -11,6 +11,7 @@ import WithHeaderAndQuoteExample from '@/components/Footer';
 import Head from 'next/head';
 import styled, { keyframes } from 'styled-components';
 import Link from 'next/link';
+import { Button } from 'react-bootstrap';
 
 const MainNav = styled.div`
   font-size: 14px;
@@ -127,26 +128,6 @@ const Div = styled.div`
           }
         }
       }
-
-      button {
-        font: inherit;
-        border-radius: 6px;
-        background: #8e2de2;
-        background: -webkit-linear-gradient(to right, #8e2de2, #4a00e0);
-        background: linear-gradient(to right, #8e2de2, #4a00e0);
-        color: white;
-        font-weight: 500;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 45px;
-        outline: none;
-        cursor: pointer;
-        padding: 14px 28px;
-        border: none;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
     }
 
     .loader {
@@ -172,15 +153,6 @@ const Div = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-
-      button {
-        font: inherit;
-        font-size: 14px;
-        border: none;
-        outline: none;
-        background-color: white;
-        color: #4a00e0;
-        cursor: pointer;
 
         @media (hover: hover) {
           &:hover {
@@ -295,9 +267,10 @@ export default function loginMail() {
                       <div className="form-group">
                           <label>Email</label>
                           <input
-                             type="email"
-                             name="email"
-                             id="email"
+                               type="email"
+                               name="email"
+                               id="email"
+                              required
                               placeholder="Ingrese e-mail..."
                               onChange={(event) => {
                                 setLoginEmail(event.target.value)
@@ -312,20 +285,20 @@ export default function loginMail() {
                                 name="password"
                                 id="password"
                                 placeholder="Password"
-                              onChange={(event) => {
+                                 onChange={(event) => {
                                 setLoginPassword(event.target.value)
                               }}
                               className="form-control"
                               required
                             />
                       </div><br/>
-                      <button onClick={login} type="button">Login</button> 
+                      <Button onClick={login} type="button">Login</Button> 
 
                         </form> 
                       <p className="info">
                       No tiene cuenta? <Link href="/auth/register">Registrarse</Link>
                       </p>
-                  <br /><button onClick={() => GoogleSignIn()} type="button">Iniciar con Google</button>
+                  <br /><Button onClick={() => GoogleSignIn()} type="button">Iniciar con Google</Button>
              
               <br/><br/><br/>
             </div>
