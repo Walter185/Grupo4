@@ -6,6 +6,7 @@ import Barra from '@/components/nav';
 import Carousel from '@/components/Carousel';
 import Footer from '@/components/Footer';
 import Searchbar from '@/components/searchbar';
+import Chat from '@/components/Chat';
 
 
 export default function Home() {
@@ -36,6 +37,7 @@ export default function Home() {
         <Carousel />
       </body>
       <div>
+        <Chat />
         <Footer />
       </div>
     </div>
