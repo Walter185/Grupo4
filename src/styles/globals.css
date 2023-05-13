@@ -48,6 +48,12 @@ code {
     monospace;
 }
 
+.pedidosya_name_logo{
+  width: 200px;
+  height:90px;
+  align-self:center;
+  margin-right:50px;
+  }
 
 .navbar_signin_icon{
   display: flex;
@@ -71,17 +77,6 @@ code {
   margin-left: 80px;
 }
 
-  .navbar_cartcount{
-
-    background-image: url(/bucket_cart_icon.svg);
-    background-repeat: no-repeat;
-    height: 51.2px;
-     width:51.2px;
-    text-align: center;
-    padding-top: 15px;
-    margin-top: 15px;
-
-}
   .navbar_amount{
   align-self:center;
    margin-left:15px;

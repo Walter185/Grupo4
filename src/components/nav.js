@@ -1,32 +1,43 @@
-import { Container, Nav, NavDropdown, Navbar } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import { NavDropdown } from 'react-bootstrap';
+import Navbar from 'react-bootstrap/Navbar';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 import styles from '@/styles/Home.module.css';
-import Link from 'next/link';
-import { useAuthState } from 'react-firebase-hooks/auth';
-import { auth } from '../utils/firebase';
 
-
-const Barra = () => {
-
+function navBarResponsive() {
   const [ user, setUser ] = useAuthState(auth);
-     
-    return (
-      <Navbar bg="light" expand="lg">
-        <Container className={`${styles.container}`}>
-
-        <Navbar.Brand href="/">
-          <div>
-          <img src='pediloya.png' alt='logo' className={`${styles.logo}`}/> 
-          </div>
-        </Navbar.Brand>
-
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        
-        <Navbar.Collapse id="basic-navbar-nav">
-                       
-          </Navbar.Collapse>
-          <Navbar.Collapse className="justify-content-end">
-          <Nav.Link href="addressInput"></Nav.Link>
-          <Navbar.Text>
+  return (
+    <>
+      {[false, 'sm', 'md', 'lg'].map((expand) => (
+        <Navbar key={expand} bg="light" expand={expand} className="mb-3" fixed="top" variant="light">
+          <Container fluid>
+            <Navbar.Brand href="#home">
+              <a class="nav-link navbar-brand" href="/">
+                <img src='pediloya.png' alt="Logo de PediloYa" className={`${styles.logo}`}/>
+              </a>
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Offcanvas
+              id={`offcanvasNavbar-expand-${expand}`}
+              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+              placement="end"
+            >
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                  PediloYa
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                <Nav className="flex-grow-1 pe-3 me-auto">
+                  <Nav.Link href="#action1">Comidas</Nav.Link>
+                  <Nav.Link href="#action2">Bebidas</Nav.Link>
+                  <Nav.Link href="#action3">Postres</Nav.Link>
+                </Nav>
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
+            <Navbar.Collapse className="justify-content-end">
+            <Navbar.Text>
             <ul>
         
                   {!user && (
@@ -84,11 +95,12 @@ const Barra = () => {
                   
               </ul>
             </Navbar.Text>
-          </Navbar.Collapse>
-        </Container>
-  
-    </Navbar>
-    )
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+      ))}
+    </>
+  );
 }
 
-export default Barra;
+export default navBarResponsive;
