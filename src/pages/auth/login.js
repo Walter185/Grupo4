@@ -284,12 +284,13 @@ export default function loginMail() {
                                 type="password"
                                 name="password"
                                 id="password"
+                                required
+                                minLength={6}
                                 placeholder="Password"
                                  onChange={(event) => {
                                 setLoginPassword(event.target.value)
                               }}
                               className="form-control"
-                              required
                             />
                       </div><br/>
                       <Button onClick={login} type="button">Login</Button> 

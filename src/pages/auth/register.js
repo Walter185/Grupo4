@@ -180,17 +180,56 @@ export default function loginMail() {
   const [registerEmail, setRegisterEmail] = useState("");
   const [registerPassword, setRegisterPassword] = useState("");
   const [registerName, setRegisterName] = useState("");
-
   const [user, setUser] = useState({});
+  const [serverErrorMessage, setServerErrorMessage] = useState('');
 
+  const nameInputHandler = (ev) => {
+    setServerErrorMessage('');
+    setNameInput(ev.target.value);
+  };
+
+  const emailInputHandler = (ev) => {
+    setServerErrorMessage('');
+    setEmailInput(ev.target.value);
+  };
+
+  const passwordInputHandler = (ev) => {
+    setServerErrorMessage('');
+    setPasswordInput(ev.target.value);
+  };
   const register = async () => {
     try {
       setRegisterEmail("");
       setRegisterPassword("");
       const user = await createUserWithEmailAndPassword(auth, registerEmail, registerPassword).then(async  =>{
-         updateProfile(auth.currentUser, {displayName: registerName})
+        (userCredential) => {
+          const uid = userCredential.user.uid;
+          setDoc(doc(db, uid, 'account'), {
+            name: registerName,
+            email: registerEmail,
+          })
+          .then(() => {
+            setDoc(doc(db, uid, 'wishlist'), {
+              items: [],
+            }).then(() => {
+              setDoc(doc(db, uid, 'cart'), {
+                items: [],
+              });
+            });
+          })
+          .catch((error) => {
+            console.log(error);
+          }) .catch((error) => {
+            const errorCode = error.code;
+  
+            if (errorCode === 'auth/email-already-in-use') {
+              setServerErrorMessage('Email address already in use.');
+            } else {
+              setServerErrorMessage('Something went wrong.');
+            }
+          });}
       })
-      route.push('/')
+      route.push('/');
       console.log(user);
     } catch(error) {
       console.log(error.message)

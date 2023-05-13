@@ -1,10 +1,9 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from 'firebase/auth';
-import { getFirestore } from "firebase/firestore";
-import { getAnalytics } from "firebase/analytics";
+import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAuNudZHlV5kvd_jTCmAU9-3lUkoWYrFyE",
+  apiKey: "AIzaSyCkPrZK7AH3Uy26y_GpcuCgCGsiBAiXRhY",
   authDomain: "g4-pediloya.firebaseapp.com",
   projectId: "g4-pediloya",
   storageBucket: "g4-pediloya.appspot.com",
@@ -15,7 +14,6 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
-export const db = getFirestore(app);
-
+export const db = getFirestore();
 
  
