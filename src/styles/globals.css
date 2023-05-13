@@ -9,12 +9,6 @@ body, html {
   width: 100%;
 }
 
-.navbar {
-  width: 100%;
-  height: auto;
-  display: contents;
-}
-
 .titulos {
   position: fixed;
   top: 15em;
@@ -30,6 +24,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 .pedidosya_name_logo{
   width: 200px;
   height:90px;
@@ -47,17 +42,6 @@ code {
    background-color:lightgray;
     align-self:center;
   }
-  .navbar_cartcount{
-
-    background-image: url(/bucket_cart_icon.svg);
-    background-repeat: no-repeat;
-    height: 51.2px;
-     width:51.2px;
-    text-align: center;
-    padding-top: 15px;
-    margin-top: 15px;
-
-}
   .navbar_amount{
   align-self:center;
    margin-left:15px;

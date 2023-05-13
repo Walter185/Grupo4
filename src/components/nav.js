@@ -5,11 +5,11 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import styles from '@/styles/Home.module.css';
 
 
-function OffcanvasExample() {
+function navBarResponsive() {
   return (
     <>
       {[false, 'sm', 'md', 'lg'].map((expand) => (
-        <Navbar key={expand} bg="light" expand={expand} className="mb-3" fixed="top" bg="light" variant="light">
+        <Navbar key={expand} bg="light" expand={expand} className="mb-3" fixed="top" variant="light">
           <Container fluid>
             <Navbar.Brand href="#home">
               <a class="nav-link navbar-brand" href="#">
@@ -47,41 +47,4 @@ function OffcanvasExample() {
   );
 }
 
-export default OffcanvasExample;
-
-/* const Barra = () => {
-
-  const [ user, loading ] = useAuthState(auth);
-     
-    return (
-            <Navbar.Text>
-              <ul>
-                {!user && (
-                  <Link legacyBehavior href={'/auth/login'}>
-                      <a >
-                          Ingresar
-                      </a>
-                  </Link>
-                )}
-                {user && (
-                  <div className={`${styles.user}`} >
-                    <Link href={'/dashboard'}>
-                      <a>{user.displayName}</a>
-                        <img src={user.photoURL} alt="avatar" referrerPolicy='no-referrer' width='50px'/>
-                    </Link>
-                    <Link legacyBehavior href={'/auth/logout'}>
-                    <a >
-                      Salir
-                    </a>
-                    </Link>
-                  </div>
-                )}
-              </ul>
-            </Navbar.Text>
-          </Navbar.Collapse>
-        </Container>  
-      </Navbar>
-    )
-}
-
-export default Barra; */
+export default navBarResponsive;
