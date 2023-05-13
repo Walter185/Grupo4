@@ -4,7 +4,6 @@ import Barra from '@/components/nav';
 import Carousel from '@/components/Carousel';
 import RandomCards from '@/components/RandomCards';
 import Footer from '@/components/Footer';
-
  
 export default function Home() {
 
