@@ -1,6 +1,49 @@
-import Card from 'react-bootstrap/Card';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import ListGroup from 'react-bootstrap/ListGroup';
+import Image from 'react-bootstrap/Image';
 
-function WithHeaderAndQuoteExample() {
+function FooterGrid() {
+  return (
+    <Container className='p-3 m-0 bg-light justify-content-center flex-column'>
+      <Row>
+        <Col className='flex-column justify-content-center'>
+          <h5>
+            {' '}
+            PediloYa
+            {' '}
+          </h5>
+          <p>
+            Sede central: Av. Siempreviva 742, Buenos Aires.<br/>
+            Since 2014
+          </p>
+        </Col>
+        <Col>
+          <ListGroup className='rounded-0'>
+            Nuestras redes sociales:
+            <ListGroup.Item>
+              <Image src="@/public/facebook-icon.png"/>Facebook
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <Image src="@/public/instagram-icon.png"/>Instagram
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <Image src="@/public/twitter-icon.png"/>Twitter
+            </ListGroup.Item>
+          </ListGroup>
+        </Col>
+      </Row>
+    </Container>
+  );
+}
+
+export default FooterGrid;
+
+
+/* import Card from 'react-bootstrap/Card';
+
+function Footer() {
   return (
     <Card className='rounded-0  bg-secondary text-white'>
       <Card.Body>
@@ -13,8 +56,7 @@ function WithHeaderAndQuoteExample() {
             Estamos para facilitarte las cosas. Lo que quieras, desde donde quieras y donde vos quieras.
           </h6>
           <h6>
-            Sede central: Av. Siempreviva 742, Buenos Aires.<br/>
-            Since 2014
+            
           </h6>
         </blockquote>
       </Card.Body>
@@ -22,4 +64,4 @@ function WithHeaderAndQuoteExample() {
   );
 }
 
-export default WithHeaderAndQuoteExample;
+export default Footer; */
