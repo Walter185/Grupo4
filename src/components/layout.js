@@ -1,5 +1,4 @@
 import Barra from './nav';
-
 const Layout = ({children}) => {
     return (
         <div>
