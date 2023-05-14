@@ -2,8 +2,11 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import { NavDropdown } from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
-import Offcanvas from 'react-bootstrap/Offcanvas';
+import { Offcanvas } from 'react-bootstrap';
 import styles from '@/styles/Home.module.css';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { auth } from '@/utils/firebase';
+import Link from 'next/link';
 
 function navBarResponsive() {
   const [ user, setUser ] = useAuthState(auth);

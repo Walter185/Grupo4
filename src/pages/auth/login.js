@@ -6,12 +6,12 @@ import {  signInWithPopup,
         } from "firebase/auth";
 import { useState }  from 'react';
 import { auth } from '../../utils/firebase';
-import { useRouter } from 'next/router';
 import WithHeaderAndQuoteExample from '@/components/Footer';
 import Head from 'next/head';
 import styled, { keyframes } from 'styled-components';
 import Link from 'next/link';
 import { Button } from 'react-bootstrap';
+import { useRouter } from 'next/router';
 
 const MainNav = styled.div`
   font-size: 14px;
