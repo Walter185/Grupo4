@@ -1,0 +1,31 @@
+[ 
+    {
+        "id": 1,
+        "titulo": "Tres Leches",
+        "precio":  " $950,00",
+        "imagen":"./postres/tres leche.jpg",
+        "texto": "Bizcocho de vainilla humedecida con leche entrea, leche condesada y leche evaporada cubierto con crema chantilli y canela."
+    },
+    {
+        "id": 2,
+        "titulo": "Choco Torta",
+        "precio":"$ 750,00",
+        "imagen":"./postres/choco torta.jpg",
+        "texto":"Galletitas de chocolate cubierto con una mezcla de crema de leche y dulce de leche adornado con gotitas de chocolate."
+    },
+    {
+        "id": 3,
+        "titulo": "Selva Negra",
+        "precio": "$ 850,00",
+        "imagen": "./postres/selva negra.jpg",
+        "texto":"Capaa de bizcocho de chocolate húmedo con almibar de licor y relleno y cubierto con crema chantilli y cerezas maceradas, decorado con viruta de chocolate"
+    },
+    {
+        "id": 4,
+        "titulo": "Tiramisu",
+        "precio": "$ 900,00",
+        "imagen": "./postres/tiramisu.jpg",
+        "texto":"Capas de bizcocho bañado en cafe, relleno y cubierto de crema mascarpone y una capa final de cacao en polvo (contiene licor de oporto)"
+    }
+
+]

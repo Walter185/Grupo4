@@ -9,8 +9,8 @@ const styles={
 
     },
     imagen:{
-        width: "150px",
-        heigth: "100px",
+        width: "130px",
+        heigth: "80px",
         margin: "30px auto",
         padding: "5px",
         borderRadius: "16px",
