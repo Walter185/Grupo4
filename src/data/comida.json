@@ -1,0 +1,40 @@
+[ 
+    {
+        "id":1,
+        "titulo": "Club House",
+        "precio":  "$1.740,00",
+        "imagen":"./comida/club house con papas.jpg",
+        "texto": "Pollo deshilachado + lechuga + tomate + palta + queso + Jamón + pan molde tostado + salsas a escoger."
+    },
+    {
+        "id":2,
+        "titulo": "Fideos a la Boloñesa",
+        "precio":"$2.300,00",
+        "imagen":"./comida/fideos.jpg",
+        "texto":"Fideos caseros con salsa boloñesa y queso."
+    },
+    {
+        "id":3,
+        "titulo": "Hamburguesa Crispy",
+        "precio": "$ 1.850,00",
+        "imagen": "./comida/haburguesa.jpg",
+        "texto":"Pan de la casa, medallón de pollo crispy, panceta, huevo, lechuga, tomate, cheddar y aderezo cítrico con papas fritas."
+    },
+    {
+        "id":4,
+        "titulo": "Pizza con Rúcula",
+        "precio": "$ 1.350,00",
+        "imagen": "./comida/pizza2.jpg",
+        "texto":"Pizza al molde, con salsa, mozarella, tomate y rúcula"
+    },
+    {
+        "id":5,
+        "titulo": "Pollo a la Broaster",
+        "precio": "$ 2.350,00",
+        "imagen": "./comida/pollo con papas.jpg",
+        "texto":"Pollo a la Broaster acompañado con papas fritas"
+    }
+    
+
+
+]

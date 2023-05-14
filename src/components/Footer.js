@@ -4,6 +4,13 @@ import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Image from 'react-bootstrap/Image';
 
+const styles={
+  logo:{
+      width: "60px",
+      padding: "15px",
+  }
+}
+
 function FooterGrid() {
   return (
     <Container className='p-3 m-0 bg-light justify-content-center flex-column'>
@@ -23,13 +30,13 @@ function FooterGrid() {
           <ListGroup className='rounded-0'>
             Nuestras redes sociales:
             <ListGroup.Item>
-              <Image src="@/public/facebook-icon.png"/>Facebook
+              <Image style={styles.logo} src="./facebook.png"/>Facebook
             </ListGroup.Item>
             <ListGroup.Item>
-              <Image src="@/public/instagram-icon.png"/>Instagram
+              <Image style={styles.logo} src="./instagram.png"/>Instagram
             </ListGroup.Item>
             <ListGroup.Item>
-              <Image src="@/public/twitter-icon.png"/>Twitter
+              <Image style={styles.logo} src="./twitter.png"/>Twitter
             </ListGroup.Item>
           </ListGroup>
         </Col>
