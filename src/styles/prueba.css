@@ -1,0 +1,15 @@
+div{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    width: 85px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 16px;
+    color: white;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-items: center;
+
+}

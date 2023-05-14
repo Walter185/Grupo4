@@ -33,7 +33,7 @@ function navBarResponsive() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="flex-grow-1 pe-3 me-auto">
-                  <Nav.Link href="#action1">Comidas</Nav.Link>
+                  <Nav.Link href='/comida'>Comidas</Nav.Link>
                   <Nav.Link href="#action2">Bebidas</Nav.Link>
                   <Nav.Link href="#action3">Postres</Nav.Link>
                 </Nav>
