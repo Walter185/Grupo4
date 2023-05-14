@@ -1,10 +1,10 @@
 import { auth } from '../utils/firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Head from 'next/head';
 import styled from 'styled-components';
 import WithHeaderAndQuoteExample from '@/components/Footer';
+import { useRouter } from 'next/router';
 
 
 const Div = styled.div`
