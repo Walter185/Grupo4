@@ -7,7 +7,7 @@ import styles from '@/styles/Home.module.css';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from '@/utils/firebase';
 import Link from 'next/link';
-import DarkModeSwitch from './darkModeSwitch';
+import DarkModeSwitch from './DarkModeSwitch';
 import ContextWrapper from './ContextWrapper';
 
 function navBarResponsive() {
