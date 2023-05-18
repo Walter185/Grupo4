@@ -23,16 +23,15 @@ export default function Home() {
       
       <main className={styles.main}>
       <Layout>
-        <Barra> </Barra>     
-
-         <Carousel />
+        <Barra />     
+        <Carousel />
         <RandomCards />
-        </Layout>
+      </Layout>
 
       </main>
-          <Chat />
+        <Chat />
         <Footer />
-        </ContextWrapper>
+    </ContextWrapper>
       </div>
  
 
