@@ -9,6 +9,13 @@
   
 }
 
+.light {
+  background-color: aqua;
+}
+
+.dark {
+  background-color: black;
+}
 .logo {
     -webkit-filter: invert(1);
     filter: invert(1);

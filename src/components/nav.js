@@ -7,6 +7,7 @@ import styles from '@/styles/Home.module.css';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from '@/utils/firebase';
 import Link from 'next/link';
+import DarkModeSwitch from './darkModeSwitch';
 
 function navBarResponsive() {
   const [ user, setUser ] = useAuthState(auth);
@@ -40,6 +41,7 @@ function navBarResponsive() {
               </Offcanvas.Body>
             </Navbar.Offcanvas>
             <Navbar.Collapse className="justify-content-end">
+              <DarkModeSwitch></DarkModeSwitch>
             <Navbar.Text>
             <ul>
         
