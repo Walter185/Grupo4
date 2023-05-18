@@ -7,6 +7,8 @@ import styles from '@/styles/Home.module.css';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from '@/utils/firebase';
 import Link from 'next/link';
+import DarkModeSwitch from './DarkModeSwitch';
+import ContextWrapper from './ContextWrapper';
 
 function navBarResponsive() {
   const [ user, setUser ] = useAuthState(auth);
@@ -37,10 +39,8 @@ function navBarResponsive() {
                   <Nav.Link href='/bebidas'>Bebidas</Nav.Link>
                   <Nav.Link href='/postres'>Postres</Nav.Link>
                 </Nav>
-              </Offcanvas.Body>
-            </Navbar.Offcanvas>
-            <Navbar.Collapse className="justify-content-end">
-            <Navbar.Text>
+                                   <DarkModeSwitch></DarkModeSwitch>
+<Navbar.Text>
             <ul>
         
                   {!user && (
@@ -98,7 +98,9 @@ function navBarResponsive() {
                   
               </ul>
             </Navbar.Text>
-            </Navbar.Collapse>
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
+           
           </Container>
         </Navbar>
       ))}
