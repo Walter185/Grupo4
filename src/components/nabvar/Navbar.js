@@ -3,19 +3,23 @@ import Nav from 'react-bootstrap/Nav';
 import { NavDropdown } from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
 import { Offcanvas } from 'react-bootstrap';
-import styles from '@/styles/Home.module.css';
+import styles from '@/styles/Navbar.module.css';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from '@/utils/firebase';
 import Link from 'next/link';
-import DarkModeSwitch from './DarkModeSwitch';
-import ContextWrapper from './ContextWrapper';
+import { useContext } from 'react';
+import { maincontextState } from '@/context/maincontextprovider';
+import DarkMode from '../darkmode/DarkMode';
 
-function navBarResponsive() {
+function NavBar() {
   const [ user, setUser ] = useAuthState(auth);
+  let context = useContext(maincontextState);
+  let darkMode = context.darkMode;
+
   return (
     <>
       {[false, 'sm', 'md', 'lg'].map((expand) => (
-        <Navbar key={expand} bg="light" expand={expand} className="mb-3" fixed="top" variant="light">
+        <Navbar key={expand}  expand={expand} className={darkMode ? styles.dark : styles.light} fixed="top" variant="light">
           <Container fluid>
             <Navbar.Brand href="#home">
               <a class="nav-link navbar-brand" href="/">
@@ -39,8 +43,9 @@ function navBarResponsive() {
                   <Nav.Link href='/bebidas'>Bebidas</Nav.Link>
                   <Nav.Link href='/postres'>Postres</Nav.Link>
                 </Nav>
-                                   <DarkModeSwitch></DarkModeSwitch>
-<Navbar.Text>
+            <Navbar.Text>
+            <DarkMode></DarkMode>
+      
             <ul>
         
                   {!user && (
@@ -66,7 +71,6 @@ function navBarResponsive() {
                           <NavDropdown.Item href="#action/3.2">
                           <a className='font-text'>Favoritos</a>
                           </NavDropdown.Item>
-                         
                           <NavDropdown.Item href="#action/3.3">
                           <div className="item box-div">
                               <a className='font-text'>Pedidos</a>
@@ -108,4 +112,4 @@ function navBarResponsive() {
   );
 }
 
-export default navBarResponsive;
+export default NavBar;
