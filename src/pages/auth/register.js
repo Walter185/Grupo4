@@ -10,7 +10,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import styled, { keyframes } from 'styled-components';
 import { auth } from '../../utils/firebase';
-import WithHeaderAndQuoteExample from '@/components/footer/Footer';
+import Footer from '@/components/Footer';
 import { Button } from 'react-bootstrap';
 import { useRouter } from 'next/router';
 
@@ -245,7 +245,7 @@ export default function loginMail() {
 
     const authorization = auth;
     const result = await signInWithPopup(authorization, provider);
-
+    route.push('/');
     console.log(result);
   }
 
@@ -322,7 +322,7 @@ export default function loginMail() {
         </div>
         </>
         )}
-      </Div><WithHeaderAndQuoteExample></WithHeaderAndQuoteExample>
+      </Div><Footer></Footer>
     </>
   );
 }
