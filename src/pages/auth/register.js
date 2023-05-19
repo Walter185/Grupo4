@@ -10,7 +10,6 @@ import Link from 'next/link';
 import Head from 'next/head';
 import styled, { keyframes } from 'styled-components';
 import { auth } from '../../utils/firebase';
-import Footer from '@/components/Footer';
 import { Button } from 'react-bootstrap';
 import { useRouter } from 'next/router';
 import FooterGrid from '@/components/footer/Footer';
