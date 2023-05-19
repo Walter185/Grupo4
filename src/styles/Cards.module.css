@@ -1,0 +1,33 @@
+
+.contenedor {
+    background-color: white;
+    border-radius: 16px;
+    margin: 30px auto;
+    padding: 20px;
+
+}
+
+.imagen {
+    width: 250px;
+    margin:  auto;
+    padding: 5px;
+    border-radius: 16px;
+    float: left;     
+}
+
+.concepto{        
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.descripcion{        
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.precio {        
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
