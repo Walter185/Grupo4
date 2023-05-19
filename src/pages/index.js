@@ -9,6 +9,7 @@ import styles from '@/styles/Home.module.css';
 import MainContextProvider, { maincontextState } from '@/context/maincontextprovider';
 import DarkMode from '@/components/darkmode/DarkMode';
 import Message from '@/components/message/Message';
+import FooterGrid from '@/components/footer/Footer';
 
 export default function Home() {
 
@@ -31,7 +32,7 @@ export default function Home() {
         
       </main>
         <Chat />
-        <Footer />
+        <FooterGrid></FooterGrid>
         </MainContextProvider>
       </div>
   )

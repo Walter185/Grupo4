@@ -6,12 +6,12 @@ import {  signInWithPopup,
         } from "firebase/auth";
 import { useState }  from 'react';
 import { auth } from '../../utils/firebase';
-import WithHeaderAndQuoteExample from '@/components/footer/Footer';
 import Head from 'next/head';
 import styled, { keyframes } from 'styled-components';
 import Link from 'next/link';
 import { Button } from 'react-bootstrap';
 import { useRouter } from 'next/router';
+import FooterGrid from '@/components/footer/Footer';
 
 const MainNav = styled.div`
   font-size: 14px;
@@ -306,7 +306,8 @@ export default function loginMail() {
           </>
         )}
      
-</Div><WithHeaderAndQuoteExample></WithHeaderAndQuoteExample>
+</Div>
+<FooterGrid></FooterGrid>
 </>
 
 );
