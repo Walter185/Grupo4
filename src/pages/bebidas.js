@@ -1,12 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
-import Barra from '@/components/nav';
-import RandomCards from '@/components/RandomCards';
-import Footer from '@/components/Footer';
+import Barra from '@/components/nabvar/Navbar';
+import RandomCards from '@/components/card/RandomCards';
+import Footer from '@/components/footer/Footer';
 import Searchbar from '@/components/searchbar';
-import Chat from '@/components/Chat';
-import ContenProducto from '@/components/ContenProducto';
-import Productos from '@/components/card';
+import Chat from '@/components/chat/Chat';
+import ContenProducto from '@/components/card/ContenProducto';
+import Productos from '@/components/card/Cards';
 import data from '../data/bebida.json';
 
 export default function Home() {
@@ -40,10 +40,9 @@ export default function Home() {
             )}
         </ContenProducto>
         <br></br>
-        <RandomCards />
+     
       </body>
-      <Chat />
-        <Footer />
+
       </div>
  
 

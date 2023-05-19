@@ -1,0 +1,130 @@
+
+.navbar {
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+  color: wheat;
+  }
+  
+
+  .light {
+    background-color: wheat;
+  }
+  
+  .dark {
+    background-color: rgb(52, 52, 52);
+    
+  }
+  .nav-link {
+    color: white;
+  }
+
+  
+  .pedidosya_name_logo{
+    width: 100px !important;
+    height:90px;
+    align-self:center;
+    margin-right:50px;
+    }
+  
+  .navbar_signin_icon{
+    display: flex;
+     align-self:center;
+    }
+    .navbar_cartdetail{
+    height: 40px;
+     width:0.5px; 
+     background-color:lightgray;
+      align-self:center;
+    }
+  
+    
+  .nav-link {
+    color: bisque !important;
+    font-size: larger;
+    padding: 20px;
+    text-align: center;
+    display: inline-flex;
+
+  }
+  /*
+  .dropdown-toggle {
+    white-space: nowrap;
+    margin-top: 8px;
+    margin-left: 80px;
+  }
+  
+    .navbar_amount{
+    align-self:center;
+     margin-left:15px;
+    }
+  
+    .search-input{
+      background-color: #f7f7f7;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      height: 48px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: row;
+  }
+  
+  .search-input .lupa{
+    width: 35px;
+    height: 35px;
+    color: var(--color);;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search-input .input-text{
+    font-size: 24px;
+    width: 100%;
+  }
+  
+  
+    .button {
+      padding-left: 30px !important;
+      justify-items: space-between;
+    }
+  
+    .address-menu{
+      max-width: 200px;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      color: var(--p-color);
+      margin-top: 20px;
+      margin-left: 20em;
+  }
+  
+  
+  .btn-save{
+      width: 80%;
+      font-weight: 600;
+      height: 50px;
+  }
+  
+  #overlay-address {
+      position: fixed; /* Sit on top of the page content */
+      /* display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; /* Full width (cover the whole page) */
+      /* height: 100%; /* Full height (cover the whole page) */
+    
+      
+/*   
+  .address-menu-content{
+      margin-top: 10%;
+      display: flex;
+      width: 100%;
+      position: relative;
+      fill: var(--color);
+      height: 100%;
+      align-items: center;
+      flex-direction: column;
+  } */
