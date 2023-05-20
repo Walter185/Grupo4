@@ -1,9 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
-import NavBar from '@/components/nabvar/Navbar';
+import NavBar from '@/components/navbar/Navbar';
 import Carousel from '@/components/carousel/Carousel';
 import RandomCards from '@/components/card/RandomCards';
-import Footer from '@/components/footer/Footer';
 import Chat from '@/components/chat/Chat';
 import styles from '@/styles/Home.module.css';
 import MainContextProvider, { maincontextState } from '@/context/maincontextprovider';
