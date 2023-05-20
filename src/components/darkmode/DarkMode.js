@@ -1,6 +1,7 @@
 import { maincontextState } from "@/context/maincontextprovider";
 import { useContext } from "react";
 import { useState } from "react";
+import Button from 'react-bootstrap/Button';
 
 export default function DarkMode (){
 
@@ -9,13 +10,13 @@ export default function DarkMode (){
        
     return(
         <>
-          <button onClick={ () => {
+          <Button className="justify-content-end" variant="secondary" size="sm" onClick={ () => {
                     setToggle(!isToggleOn)
                     setDarkmode(isToggleOn);
                 }
-             }>
+            }>
                 { isToggleOn ? 'Encendido': 'Apagado'}
-            </button>
+          </Button>
         </>
     )
 }

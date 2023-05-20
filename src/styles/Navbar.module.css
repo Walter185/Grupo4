@@ -4,7 +4,7 @@
     height: auto;
     display: inline-flex;
     align-items: center;
-  color: wheat;
+    color: wheat;
   }
   
 
@@ -30,13 +30,14 @@
   
   .navbar_signin_icon{
     display: flex;
-     align-self:center;
+    align-self:center;
+    margin-top: 5px;
     }
     .navbar_cartdetail{
     height: 40px;
-     width:0.5px; 
-     background-color:lightgray;
-      align-self:center;
+    width:0.5px; 
+    background-color:lightgray;
+    align-self:center;
     }
   
     

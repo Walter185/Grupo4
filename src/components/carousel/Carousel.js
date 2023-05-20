@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
 import { Button, Form } from 'react-bootstrap';
 
-function firstCarousel() {
+function FirstCarousel() {
   return (
     <Carousel className="m-4" style={{width: "1200px"}}>
       <Carousel.Item>
@@ -76,7 +76,7 @@ function firstCarousel() {
     </Carousel>
   );
 }
-{/* <div className="titulos carousel-caption">
+/*{ <div className="titulos carousel-caption">
     <h1>¡Pedí lo que quieras!
     </h1>
     <p>Restaurantes, mercados, farmacias, kioscos y muchos más.</p>
@@ -89,6 +89,6 @@ function firstCarousel() {
       />
       <Button variant="outline-warning">Buscar</Button>
     </Form>
-  </div> */}
+  </div> }*/
 
-export default firstCarousel;
+export default FirstCarousel;
