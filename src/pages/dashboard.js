@@ -6,7 +6,7 @@ import { useContext } from 'react';
 import MainContextProvider, { maincontextState } from '@/context/maincontextprovider';
 import styles from '@/styles/Dashboard.module.css';
 import FooterGrid from '@/components/footer/Footer';
-import NavBar from '@/components/nabvar/Navbar';
+import Barra from '@/components/navbar/Navbar';
 
 const Dashboard = () => {
     const [user, loading] = useAuthState(auth);
@@ -25,7 +25,7 @@ const Dashboard = () => {
         return (
             <>  
             <MainContextProvider>
-            <NavBar></NavBar>  
+            <Barra></Barra> 
             <br></br><br></br><br></br>
             <div className={darkMode ? styles.dark : styles.light}>
             <p className="title">Bienvenido a PediloYa {user.displayName}</p>

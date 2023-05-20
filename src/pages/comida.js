@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
-import Barra from '@/components/nabvar/Navbar';
+import Barra from '@/components/navbar/Navbar';
 // import RandomCards from '@/components/card/RandomCards';
 import Footer from '@/components/footer/Footer';
 // import Searchbar from '@/components/searchbar';

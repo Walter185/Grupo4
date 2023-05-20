@@ -1,6 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
-import NavBar from '@/components/navbar/Navbar';
 import Carousel from '@/components/carousel/Carousel';
 import RandomCards from '@/components/card/RandomCards';
 import Chat from '@/components/chat/Chat';
@@ -9,6 +8,7 @@ import MainContextProvider, { maincontextState } from '@/context/maincontextprov
 import DarkMode from '@/components/darkmode/DarkMode';
 import Message from '@/components/message/Message';
 import FooterGrid from '@/components/footer/Footer';
+import Barra from '@/components/navbar/Navbar';
 
 export default function Home() {
 
@@ -23,7 +23,7 @@ export default function Home() {
       <MainContextProvider> 
       <main className={styles.main}>
        
-        <NavBar></NavBar>
+        <Barra></Barra>
         <DarkMode></DarkMode>
         <Message></Message>
         <Carousel />

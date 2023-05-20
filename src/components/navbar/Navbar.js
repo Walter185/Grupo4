@@ -11,7 +11,7 @@ import { useContext } from 'react';
 import { maincontextState } from '@/context/maincontextprovider';
 import DarkMode from '../darkmode/DarkMode';
 
-function NavBar() {
+function Barra() {
   const [ user, setUser ] = useAuthState(auth);
   let context = useContext(maincontextState);
   let darkMode = context.darkMode;
@@ -113,4 +113,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default Barra;
