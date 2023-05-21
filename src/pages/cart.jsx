@@ -22,9 +22,10 @@ const CartPage = () => {
     <br></br><br></br>
      <div className={styles.container}>
       {cart.length === 0 ? (
-        <h1>Your Cart is Empty!</h1>
+        <h1>Tu carrito está vacío.</h1>
       ) : (
         <>
+        <br />
           <div className={styles.header}>
             <div>Producto</div>
             <div>Nombre</div>

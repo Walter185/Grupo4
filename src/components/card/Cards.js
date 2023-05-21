@@ -10,10 +10,12 @@ function Productos (props) {
                 <Image className={ styles.imagen } src={props.imagen} alt="producto"></Image>
                 <h1 className={styles.concepto}>{props.titulo}</h1>
                 <p className={styles.descripcion}>{props.texto}</p>
-                <p className={styles.precio}>{props.precio}</p>
+                <p className={styles.precio}>${props.precio}</p>
         
             </div>
-            <Comprar props={props} /> 
+            <Comprar product={props} />           
+            <div >
+        </div>
         </>
     )
 }

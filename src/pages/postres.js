@@ -1,14 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
-import ContenProducto from '@/components/card/ContenProducto';
-import Productos from '@/components/card/Cards';
+import ContenProducto from '@/components/Card/ContenProducto';
+import Productos from '@/components/Card/Cards';
 import data from '../data/postres.json';
 import Barra from '@/components/navbar/Navbar';
 import Chat from '@/components/chat/Chat';
 import Footer from '@/components/footer/Footer';
 
 export default function Home() {
-  
+
   return (
     <>
     <div>
