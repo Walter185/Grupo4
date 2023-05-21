@@ -52,18 +52,18 @@ function Barra() {
                 <Nav className="flex-grow-1 justify-content-around mt-4 me-auto">
                   <Nav.Link href='/comida'>Comidas</Nav.Link>
                   <Nav.Link href='/bebidas'>Bebidas</Nav.Link>
-                  <Nav.Link href='/postres'>Postres</Nav.Link>                  
+                  <Nav.Link href='/postres'>Postres</Nav.Link>
                 </Nav>
-                
-                  {/* ================ CARRITO ================*/}
-                  <div>
+
+                {/* ================ CARRITO ================*/}
+                <div>
                   <Link href="/cart">
-                    <BsCart4 size={50}> </BsCart4>
                     <h1> ({getItemsCount()})</h1>
+                    <BsCart4 size={30}></BsCart4>
                   </Link>
-                  </div>
+                </div>
                 <Navbar.Text>
-                  <DarkMode></DarkMode>             
+                  <DarkMode></DarkMode>
                   <ul>
                     {!user && (
                       <Link legacyBehavior href={'/auth/login'}>
@@ -119,7 +119,7 @@ function Barra() {
                     )}
 
                   </ul>
-                  
+
                 </Navbar.Text>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

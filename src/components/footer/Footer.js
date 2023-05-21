@@ -21,16 +21,16 @@ function FooterGrid() {
           </p>
         </Col>
         <Col>
-          <ListGroup className='rounded-0'>
+          <ListGroup>
             Nuestras redes sociales:
-            <ListGroup.Item>
-              <Image  width={40} src="./facebook.png"/>     Facebook
+            <ListGroup.Item className={styles.ListGroup}>
+              <Image  width={20} src="./facebook.png"/>     Facebook
+            </ListGroup.Item >
+            <ListGroup.Item className={styles.ListGroup}>
+              <Image width={20} src="./instagram.jpg"/>     Instagram
             </ListGroup.Item>
-            <ListGroup.Item>
-              <Image width={40} src="./instagram.png"/>     Instagram
-            </ListGroup.Item>
-            <ListGroup.Item>
-              <Image width={40} src="./twitter.png"/>     Twitter
+            <ListGroup.Item className={styles.ListGroup}>
+              <Image width={20} src="./twitter.jpg"/>     Twitter
             </ListGroup.Item>
           </ListGroup>
         </Col>

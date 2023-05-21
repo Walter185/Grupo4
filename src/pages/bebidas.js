@@ -1,17 +1,18 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
-import Barra from '@/components/navbar/Navbar';
-import RandomCards from '@/components/card/RandomCards';
-import Footer from '@/components/footer/Footer';
+import Barra from '@/components/Navbar/Navbar';
+import RandomCards from '@/components/Card/RandomCards';
+import Footer from '@/components/Footer/Footer';
 import Searchbar from '@/components/searchbar';
 import Chat from '@/components/chat/Chat';
-import ContenProducto from '@/components/card/ContenProducto';
-import Productos from '@/components/card/Cards';
+import ContenProducto from '@/components/Card/ContenProducto';
+import Productos from '@/components/Card/Cards';
 import data from '../data/bebida.json';
 
 export default function Home() {
   
   return (
+    <>
     <div>
       <Head>
         <title>Bebidas</title>
@@ -20,31 +21,35 @@ export default function Home() {
         <link rel="icon" href="/P.png" />
       </Head>
       <main>
-        <Barra></Barra>
-      </main>
+  
       <body>
         <br></br>
         <br></br>
         <br></br>
         <ContenProducto>
 
-          {data.map( postres =>
+          {data.map( bebidas =>
           <Productos
-            titulo = {postres.titulo}
-            precio = {postres.precio}
-            imagen = {postres.imagen}
-            texto = {postres.texto}
+            id={bebidas.id}
+            titulo = {bebidas.titulo}
+            precio = {bebidas.precio}
+            imagen = {bebidas.imagen}
+            texto = {bebidas.texto}
                    
           />
             
             )}
+            <br></br>
+            <br></br>
+            
         </ContenProducto>
         <br></br>
      
       </body>
-
+    </main>
       </div>
- 
+    
+      </>
 
   )
 }

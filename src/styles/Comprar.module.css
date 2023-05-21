@@ -1,8 +1,16 @@
+
 .boton {
-    width: 120px;
+    width: 200px;
     height: 50px;
-    background-color: blue;
+    background-color: rgb(150, 57, 205);
     border-radius: 16px;
     color: white;
-    font-Weight: bold;   
-}
+    display: inline-block;
+    text-align:center;
+    margin-left: 5px;
+
+  }
+  
+  .boton:active {
+      background-color: red;
+  }
