@@ -36,14 +36,11 @@ export default function Home() {
       />
     </div>
         <Barra></Barra>
-        <DarkMode></DarkMode>
-        <Message></Message>
         <Carousel />
         <RandomCards />
         
       </main>
         <Chat />
-        <FooterGrid></FooterGrid>
         </MainContextProvider>
       </div>
   )

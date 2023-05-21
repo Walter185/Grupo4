@@ -43,14 +43,7 @@ export default function Home() {
             <br></br>
             
         </ContenProducto>
-        <br></br>
-
-        <Chat></Chat>
-        <Footer></Footer>
-
-     
-      </body>
-
+           </body>
       </div>
     
       </>

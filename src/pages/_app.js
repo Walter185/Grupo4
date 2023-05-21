@@ -12,7 +12,9 @@ export default function App({ Component, pageProps }) {
   return (
     <Provider store={store}>
       <div className="wrapper">
+        <Navbar /><br></br><br></br>
         <Component {...pageProps} />
+        <Footer />
       </div>
     </Provider>
   );

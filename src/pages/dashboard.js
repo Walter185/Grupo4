@@ -25,7 +25,6 @@ const Dashboard = () => {
         return (
             <>  
             <MainContextProvider>
-            <Barra></Barra> 
             <br></br><br></br><br></br>
             <div className={darkMode ? styles.dark : styles.light}>
             <p className="title">Bienvenido a PediloYa {user.displayName}</p>
@@ -34,7 +33,6 @@ const Dashboard = () => {
             <Link href="/">Volver</Link>
             <br/><br/><br/><br/><br/><br/>
            </div>
-         <FooterGrid />
          </MainContextProvider>
             </>
 

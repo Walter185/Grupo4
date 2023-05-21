@@ -18,7 +18,9 @@ const CartPage = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <>
+    <br></br><br></br>
+     <div className={styles.container}>
       {cart.length === 0 ? (
         <h1>Your Cart is Empty!</h1>
       ) : (
@@ -57,6 +59,8 @@ const CartPage = () => {
         </>
       )}
     </div>
+    </>
+   
   );
 };
 
