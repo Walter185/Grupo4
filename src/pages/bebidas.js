@@ -12,6 +12,7 @@ import data from '../data/bebida.json';
 export default function Home() {
   
   return (
+    <>
     <div>
       <Head>
         <title>Bebidas</title>
@@ -40,11 +41,16 @@ export default function Home() {
             )}
         </ContenProducto>
         <br></br>
+
+        <Chat></Chat>
+        <Footer></Footer>
+
      
       </body>
 
       </div>
- 
+    
+      </>
 
   )
 }

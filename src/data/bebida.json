@@ -3,42 +3,42 @@
         "id": 1,
         "titulo": "Papelón con Limón",
         "precio":  "$ 750,00",
-        "imagen":"./bebidas/papelon con limon.jpg",
+        "imagen":"/bebidas/papelon con limon.jpg",
         "texto": "Combinación de jugo de melaza de caña de azucarcon un toque de jugo de limon. "
     },
     {
         "id": 2,
         "titulo": "Exprimido de Naranja",
         "precio":"$ 800,00",
-        "imagen":"./bebidas/jugo de naranja.jpg",
+        "imagen":"/bebidas/jugo de naranja.jpg",
         "texto":"Exprimido de naranja dulce"
     },
     {
         "id": 3,
         "titulo": "Coca-Cola",
         "precio": "$ 1.200,00",
-        "imagen": "./bebidas/coca cola.jpg",
+        "imagen": "/bebidas/coca cola.jpg",
         "texto":"Gaseosa Coca-Cola 2,25 Lts"
     },
     {
         "id": 4,
         "titulo": "Fanta",
         "precio": "$ 1.200,00",
-        "imagen": "./bebidas/fanta.jpg",
+        "imagen": "/bebidas/fanta.jpg",
         "texto":"Gaseosa Fanta 2,25 Lts sabor a Naranja y Piña"
     },
     {
         "id": 5,
         "titulo": "7up",
         "precio": "$ 1.200,00",
-        "imagen": "./bebidas/seven up.jpg",
+        "imagen": "/bebidas/seven up.jpg",
         "texto":"Gaseosa Seven up 2,25 Lts"
     },
     {
         "id": 6,
         "titulo": "Brahma",
         "precio": "$ 900,00",
-        "imagen": "./bebidas/brahma.jpg",
+        "imagen": "/bebidas/brahma.jpg",
         "texto":"Cerveza Brahma 1 Lts"
     }
     

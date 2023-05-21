@@ -4,10 +4,13 @@ import ContenProducto from '@/components/card/ContenProducto';
 import Productos from '@/components/card/Cards';
 import data from '../data/postres.json';
 import Barra from '@/components/navbar/Navbar';
+import Chat from '@/components/chat/Chat';
+import Footer from '@/components/footer/Footer';
 
 export default function Home() {
   
   return (
+    <>
     <div>
       <Head>
         <title>Postres</title>
@@ -36,11 +39,17 @@ export default function Home() {
             )}
         </ContenProducto>
         <br></br>
-    
+
+        <Chat></Chat>
+        <Footer></Footer>
+
+     
       </body>
 
       </div>
- 
+    
+      </>
 
   )
 }
+
