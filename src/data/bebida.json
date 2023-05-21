@@ -40,7 +40,36 @@
         "precio": "$ 900,00",
         "imagen": "/bebidas/brahma.jpg",
         "texto":"Cerveza Brahma 1 Lts"
+    },
+    {
+        "id": 7,
+        "titulo": "Té de Durazno",
+        "precio": "$ 600,00",
+        "imagen": "./bebidas/te durazno.jpg",
+        "texto": "Té frio con sabor a durazno"
+    },
+    {
+        "id": 8,
+        "titulo": "Moster Energy",
+        "precio": "$ 1.600,00",
+        "imagen": "./bebidas/moster.jpg",
+        "texto": "Moster Energy  473 ml"
+    },
+    {
+        "id": 9,
+        "titulo": "Smirnooff",
+        "precio": "$ 1.400,00",
+        "imagen": "./bebidas/smirnoof.jpg",
+        "texto": "Smirnoof Sabor original 473 ml"
+    },
+    {
+        "id": 10,
+        "titulo": "Chicha",
+        "precio": "$ 950,00",
+        "imagen": "./bebidas/chicha.jpg",
+        "texto": "Chicha de pasta con canela en polvo y leche condendada"
     }
+
     
 
 
