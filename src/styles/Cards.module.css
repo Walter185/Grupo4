@@ -1,16 +1,17 @@
 
 .contenedor {
-    background-color: white;
+    background-color: rgb(236, 217, 217);
     border-radius: 16px;
-    margin: 30px auto;
-    padding: 20px;
+    margin: 20px;
+    padding-top: 20px;
+    padding-bottom: 50px;
 
 }
 
 .imagen {
-    width: 250px;
-    margin:  auto;
-    padding: 5px;
+    width: 150px;
+    margin:  2px;
+    padding: 12px;
     border-radius: 16px;
     float: left;     
 }
