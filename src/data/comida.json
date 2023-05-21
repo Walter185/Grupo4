@@ -33,7 +33,45 @@
         "precio": "$ 2.350,00",
         "imagen": "./comida/pollo con papas.jpg",
         "texto":"Pollo a la Broaster acompañado con papas fritas"
-    }
+    },
+    {
+        "id":6,
+        "titulo": "Arepa Reina Pepiada",
+        "precio": "$ 1.250,00",
+        "imagen": "./comida/reina pepeada.jpg",
+        "texto": "Arepa de maíz, cocinada al grill y rellena con la mezcla de suprema de pollo desmechado, palta triturada y mayonesa."
+    }, 
+
+    {
+        "id":7,
+        "titulo": "Locro",
+        "precio": "$ 1450,00",
+        "imagen": "./comida/locro.jpg",
+        "texto": "Suculento plato a base de carne, chorizos, cerdo, mondongo vacuno, panceta, frijoles, maíz blanco y zapallo."
+    }, 
+    {
+        "id":8,
+        "titulo": "Brochetas",
+        "precio": "$ 2750,00",
+        "imagen": "./comida/brochetas.jpg",
+        "texto": "6 brochetas de carne, pollo, cherry y zucchini, acompañado de una salsa BBQ y fritas ."
+    }, 
+    {
+        "id":9,
+        "titulo": "Cachapa de Pernil y Queso",
+        "precio": "$ 2230,00",
+        "imagen": "./comida/cachapa.jpg",
+        "texto": "Cachapa de maíz amarillo cocido en budare relleno de carne de pernil de cerdo y queso blanco guayanés."
+    }, 
+    {
+        "id":10,
+        "titulo": "Sopa de Res",
+        "precio": "$ 1460,00",
+        "imagen": "./comida/sopa.jpg",
+        "texto": "Sopa con costilla de res (tira de asado), papa, zanahoria, mandioca, ocumo, calabaza, chochos, entre otros."
+    } 
+
+
     
 
 

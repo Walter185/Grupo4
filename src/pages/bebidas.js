@@ -39,6 +39,9 @@ export default function Home() {
           />
             
             )}
+            <br></br>
+            <br></br>
+            
         </ContenProducto>
         <br></br>
 
