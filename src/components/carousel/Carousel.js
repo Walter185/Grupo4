@@ -76,19 +76,6 @@ function FirstCarousel() {
     </Carousel>
   );
 }
-/*{ <div className="titulos carousel-caption">
-    <h1>¡Pedí lo que quieras!
-    </h1>
-    <p>Restaurantes, mercados, farmacias, kioscos y muchos más.</p>
-    <Form className="d-flex">
-      <Form.Control
-        type="search"
-        placeholder="Ingrese su búsqueda..."
-        className="me-2"
-        aria-label="Search"
-      />
-      <Button variant="outline-warning">Buscar</Button>
-    </Form>
-  </div> }*/
+
 
 export default FirstCarousel;

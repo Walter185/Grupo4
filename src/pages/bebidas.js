@@ -21,7 +21,6 @@ export default function Home() {
         <link rel="icon" href="/P.png" />
       </Head>
       <main>
-        <Barra></Barra>
       </main>
       <body>
         <br></br>
@@ -44,10 +43,6 @@ export default function Home() {
             
         </ContenProducto>
         <br></br>
-
-        <Chat></Chat>
-        <Footer></Footer>
-
      
       </body>
 
