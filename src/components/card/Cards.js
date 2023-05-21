@@ -13,7 +13,7 @@ function Productos (props) {
                 <p className={styles.precio}>{props.precio}</p>
         
             </div>
-            <Comprar /> 
+            <Comprar props={props} /> 
         </>
     )
 }
