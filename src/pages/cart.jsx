@@ -5,7 +5,8 @@ import {
   incrementQuantity,
   decrementQuantity,
   removeFromCart,
-} from '../components/redux/cart.slice';
+} from '../components/Cart/cart.slice';
+
 
 const CartPage = () => {
   const cart = useSelector((state) => state.cart);
@@ -13,13 +14,13 @@ const CartPage = () => {
 
   const getTotalPrice = () => {
     return cart.reduce(
-      (accumulator, item) => accumulator + item.quantity * item.precio,
-      0
-    );
+      (accumulator, item) => accumulator + item.quantity * item.precio,0);
   };
 
   return (
-    <div className={styles.container}>
+    <>
+    <br></br><br></br>
+     <div className={styles.container}>
       {cart.length === 0 ? (
         <h1>Tu carrito está vacío.</h1>
       ) : (
@@ -36,10 +37,10 @@ const CartPage = () => {
           {cart.map((item) => (
             <div className={styles.body}>
               <div className={styles.image}>
-                <Image src={item.imagen} height="90" width="65" />
+                <Image src={item.image} height="90" width="65" />
               </div>
-              <p>{item.titulo}</p>
-              <p>$ {item.precio}</p>
+              <p>{item.product}</p>
+              <p>$ {item.price}</p>
               <p>{item.quantity}</p>
               <div className={styles.buttons}>
                 <button onClick={() => dispatch(incrementQuantity(item.id))}>
@@ -52,13 +53,15 @@ const CartPage = () => {
                   x
                 </button>
               </div>
-              <p>$ {(item.quantity * item.precio).toFixed(2)}</p>
+              <p>$ {(item.quantity * item.price).toFixed(2)}</p>
             </div>
           ))}
           <h2>Total a pagar: $ {getTotalPrice().toFixed(2)}</h2>
         </>
       )}
     </div>
+    </>
+   
   );
 };
 

@@ -7,8 +7,9 @@ import styles from '@/styles/Home.module.css';
 import MainContextProvider, { maincontextState } from '@/context/maincontextprovider';
 import DarkMode from '@/components/darkmode/DarkMode';
 import Message from '@/components/message/Message';
-import FooterGrid from '@/components/Footer/Footer';
-import Barra from '@/components/Navbar/Navbar';
+import FooterGrid from '@/components/footer/Footer';
+import Barra from '@/components/navbar/Navbar';
+import CategoryCard from './../components/Card/CategoryCard';
 
 export default function Home() {
 
@@ -21,10 +22,23 @@ export default function Home() {
         <link rel="icon" href="/P.png" />
       </Head>
       <MainContextProvider> 
-      <main className={styles.main}> 
+      <main className={styles.main}>
+      <div className={styles.small}>
+      <CategoryCard image="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" name="Restaurantes" />
+      <CategoryCard image="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" name="Desayunos" />
+      <CategoryCard image="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" name="Pastas" />
+    </div>
+    <div className={styles.large}>
+      <CategoryCard image="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" name="hamburguesas" />
+      <CategoryCard
+        image="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+        name="Pizzas"
+      />
+    </div>
         <Barra></Barra>
         <Carousel />
-        <RandomCards />        
+        <RandomCards />
+        
       </main>
         <Chat />
         </MainContextProvider>

@@ -45,28 +45,28 @@
         "id": 7,
         "titulo": "Té de Durazno",
         "precio": 600.00,
-        "imagen": "{/bebidas/te durazno.jpg",
+        "imagen": "/bebidas/te durazno.jpg",
         "texto": "Té frio con sabor a durazno"
     },
     {
         "id": 8,
         "titulo": "Moster Energy",
         "precio": 1600.00,
-        "imagen": "{/bebidas/moster.jpg",
+        "imagen": "/bebidas/moster.jpg",
         "texto": "Moster Energy  473 ml"
     },
     {
         "id": 9,
         "titulo": "Smirnooff",
         "precio": 1400.00,
-        "imagen": "{/bebidas/smirnoof.jpg",
+        "imagen": "/bebidas/smirnoof.jpg",
         "texto": "Smirnoof Sabor original 473 ml"
     },
     {
         "id": 10,
         "titulo": "Chicha",
         "precio": 950.00,
-        "imagen": "./bebidas/chicha.jpg",
+        "imagen": "/bebidas/chicha.jpg",
         "texto": "Chicha de pasta con canela en polvo y leche condendada"
     }
 
