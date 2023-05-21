@@ -37,7 +37,10 @@ export default function Home() {
             precio = {comida.precio}
             imagen = {comida.imagen}
             texto = {comida.texto}/>
+            
             )}
+            <br></br>
+            <br></br>
             
         </ContenProducto>
         <br></br>
