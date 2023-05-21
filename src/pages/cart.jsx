@@ -1,19 +1,12 @@
 import Image from 'next/image';
-<<<<<<< HEAD
 import styles from './../styles/CartPage.module.css';
-=======
->>>>>>> ffc273f3c6657a60eed9dc45d4abe553eda786b3
 import { useSelector, useDispatch } from 'react-redux';
 import {
   incrementQuantity,
   decrementQuantity,
   removeFromCart,
-<<<<<<< HEAD
 } from '../components/Cart/cart.slice';
-=======
-} from './../pages/redux/cart.slice';
-import styles from './CartPage.module.css';
->>>>>>> ffc273f3c6657a60eed9dc45d4abe553eda786b3
+
 
 const CartPage = () => {
   const cart = useSelector((state) => state.cart);
@@ -21,13 +14,7 @@ const CartPage = () => {
 
   const getTotalPrice = () => {
     return cart.reduce(
-<<<<<<< HEAD
-      (accumulator, item) => accumulator + item.quantity * item.precio,
-=======
-      (accumulator, item) => accumulator + item.quantity * item.price,
->>>>>>> ffc273f3c6657a60eed9dc45d4abe553eda786b3
-      0
-    );
+      (accumulator, item) => accumulator + item.quantity * item.precio,0);
   };
 
   return (
@@ -47,17 +34,10 @@ const CartPage = () => {
           {cart.map((item) => (
             <div className={styles.body}>
               <div className={styles.image}>
-<<<<<<< HEAD
-                <Image src={item.imagen} height="90" width="65" />
-              </div>
-              <p>{item.titulo}</p>
-              <p>$ {item.precio}</p>
-=======
                 <Image src={item.image} height="90" width="65" />
               </div>
               <p>{item.product}</p>
               <p>$ {item.price}</p>
->>>>>>> ffc273f3c6657a60eed9dc45d4abe553eda786b3
               <p>{item.quantity}</p>
               <div className={styles.buttons}>
                 <button onClick={() => dispatch(incrementQuantity(item.id))}>
@@ -70,11 +50,7 @@ const CartPage = () => {
                   x
                 </button>
               </div>
-<<<<<<< HEAD
-              <p>$ {(item.quantity * item.precio).toFixed(2)}</p>
-=======
               <p>$ {(item.quantity * item.price).toFixed(2)}</p>
->>>>>>> ffc273f3c6657a60eed9dc45d4abe553eda786b3
             </div>
           ))}
           <h2>Total a pagar: $ {getTotalPrice().toFixed(2)}</h2>
