@@ -1,14 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
-import Barra from '@/components/navbar/Navbar';
+import Barra from '@/components/Navbar/Navbar';
 // import RandomCards from '@/components/card/RandomCards';
-import Footer from '@/components/footer/Footer';
+import Footer from '@/components/Footer/Footer';
 // import Searchbar from '@/components/searchbar';
 import Chat from '@/components/chat/Chat';
-import ContenProducto from '@/components/card/ContenProducto';
-import Productos from '@/components/card/Cards';
+import ContenProducto from '@/components/Card/ContenProducto';
+import Productos from '@/components/Card/Cards';
 import data from '../data/comida.json';
-import FooterGrid from '@/components/footer/Footer';
+import FooterGrid from '@/components/Footer/Footer';
 
 export default function Home() {
   
@@ -33,6 +33,7 @@ export default function Home() {
 
           {data.map( comida =>
           <Productos
+            id={comida.id}
             titulo = {comida.titulo}
             precio = {comida.precio}
             imagen = {comida.imagen}

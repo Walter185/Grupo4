@@ -2,71 +2,72 @@
     {
         "id": 1,
         "titulo": "Tres Leches",
-        "precio":  " $950,00",
-        "imagen":"./postres/tres leche.jpg",
+        "precio": 950.00,
+        "imagen":"/postres/tres leche.jpg",
         "texto": "Bizcocho de vainilla humedecida con leche entrea, leche condesada y leche evaporada cubierto con crema chantilli y canela."
     },
     {
         "id": 2,
         "titulo": "Choco Torta",
-        "precio":"$ 750,00",
-        "imagen":"./postres/choco torta.jpg",
+        "precio": 750.00,
+        "imagen":"/postres/choco torta.jpg",
         "texto":"Galletitas de chocolate cubierto con una mezcla de crema de leche y dulce de leche adornado con gotitas de chocolate."
     },
     {
         "id": 3,
         "titulo": "Selva Negra",
-        "precio": "$ 850,00",
-        "imagen": "./postres/selva negra.jpg",
+        "precio": 850.00,
+        "imagen": "/postres/selva negra.jpg",
         "texto":"Capaa de bizcocho de chocolate húmedo con almibar de licor y relleno y cubierto con crema chantilli y cerezas maceradas, decorado con viruta de chocolate"
     },
     {
         "id": 4,
         "titulo": "Tiramisu",
-        "precio": "$ 900,00",
-        "imagen": "./postres/tiramisu.jpg",
+        "precio": 900.00,
+        "imagen": "/postres/tiramisu.jpg",
         "texto":"Capas de bizcocho bañado en cafe, relleno y cubierto de crema mascarpone y una capa final de cacao en polvo (contiene licor de oporto)"
     },
     {
         "id": 5,
         "titulo": "Torta de Oreo",
-        "precio": "$ 1.200,00",
-        "imagen": "./postres/oreo.jpg",
+        "precio": 1200.00,
+        "imagen": "/postres/oreo.jpg",
         "texto":"Torta helada de oreo y chocolate"
     },
     {
         "id": 6,
         "titulo": "Quesillo",
-        "precio": "$ 1.350,00",
-        "imagen": "./postres/quesillo.jpg",
+        "precio": 1350.00,
+        "imagen": "/postres/quesillo.jpg",
         "texto": "Quesillo Venezolano"
     },
     {
         "id": 7,
         "titulo": "Torta Balcarse",
-        "precio": "$ 1.120,00",
-        "imagen": "./postres/balcarse.jpg",
+        "precio": 1120.00,
+        "imagen": "/postres/balcarse.jpg",
         "texto":"Torta balcarse."
     },
     {
         "id": 8,
         "titulo": "Torta de Piña",
-        "precio": "$ 1.450,00",
-        "imagen": "./postres/piña.jpg",
+        "precio": 1450.00,
+        "imagen": "/postres/piña.jpg",
         "texto":"Torta volteada de piña"
     },
     {
         "id": 9,
         "titulo": "Pie de Limon",
-        "precio": "$ 1.400,00",
-        "imagen": "./postres/limon.jpg",
+        "precio": 1400.00,
+        "imagen": "/postres/limon.jpg",
         "texto":"Pie de Limon."
     },
     {
         "id": 10,
         "titulo": "Torta de Ricota",
-        "precio": "$ 1.200,00",
-        "imagen": "./postres/ricota.jpg",
+        "precio": 1200.00,
+        "imagen": "/postres/ricota.jpg",
+
         "texto":"Torta de ricota y dulce de leche"
     }
 
