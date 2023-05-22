@@ -1,12 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
-import Barra from '../components/Navbar/Navbar';
-import RandomCards from '../components/Card/RandomCards';
-import FooterGrid from '../components/Footer/Footer';
-import Searchbar from '@/components/searchbar';
-import Chat from '@/components/chat/Chat';
-import ContenProducto from '../components/Card/ContenProducto';
-import Productos from '../components/Card/Cards';
+import ContenProducto from '@/components/Card/ContenProducto';
+import Productos from '@/components/Card/Cards';
 import data from '../data/bebida.json';
 
 export default function Home() {

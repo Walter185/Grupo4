@@ -1,14 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
-import Carousel from '../components/carousel/Carousel';
-import RandomCards from '../components/Card/RandomCards';
-import Chat from '../components/chat/Chat';
+import Carousel from '@/components/carousel/Carousel';
+import RandomCards from '@/components/Card/RandomCards';
+import Chat from '@/components/chat/Chat';
 import styles from '@/styles/Home.module.css';
 import MainContextProvider, { maincontextState } from '@/context/maincontextprovider';
-import DarkMode from '../components/darkmode/DarkMode';
-import Message from '../components/message/Message';
-import FooterGrid from '../components/Footer/Footer';
-import Barra from '../components/Navbar/Navbar';
+import Barra from '@/components/Navbar/Navbar';
 
 export default function Home() {
 

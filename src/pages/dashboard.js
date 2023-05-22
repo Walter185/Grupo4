@@ -5,8 +5,6 @@ import { useRouter } from 'next/router';
 import { useContext } from 'react';
 import MainContextProvider, { maincontextState } from '@/context/maincontextprovider';
 import styles from '@/styles/Dashboard.module.css';
-import FooterGrid from '../components/Footer/Footer';
-import Barra from '../components/Navbar/Navbar';
 
 const Dashboard = () => {
     const [user, loading] = useAuthState(auth);

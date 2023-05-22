@@ -2,9 +2,9 @@
 // import '@/styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Provider } from 'react-redux';
-import store from '../components/redux/store';
-import Navbar from '../components/Navbar/Navbar';
-import Footer from '../components/Footer/Footer';
+import store from '@/components/redux/store';
+import Navbar from '@/components/Navbar/Navbar';
+import Footer from '@/components/Footer/Footer';
 import "@/styles/globals.css";
 
 
