@@ -1,6 +1,9 @@
 .container {
     background-color: rgb(252, 247, 247);
     width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: black;
 }
 .ListGroup {
     border-color: rgb(252, 247, 247);
