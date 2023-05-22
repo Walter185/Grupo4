@@ -8,7 +8,7 @@ const Comprar = ({ product }) => {
         <div >
             <button className={styles.boton}
                 onClick={() => dispatch(addToCart(product))}
-            >Agergar al carrito</button>
+            >Agregar al carrito</button>
        
         </div>
     )
