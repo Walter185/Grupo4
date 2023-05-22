@@ -3,10 +3,6 @@ import Head from 'next/head';
 import ContenProducto from '../components/Card/ContenProducto';
 import Productos from '../components/Card/Cards';
 import data from '../data/postres.json';
-import Barra from '@/components/Navbar/Navbar';
-import Chat from '@/components/chat/Chat';
-import Footer from '@/components/Footer/Footer';
-
 export default function Home() {
 
   return (

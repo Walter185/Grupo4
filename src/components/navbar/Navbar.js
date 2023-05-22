@@ -33,7 +33,7 @@ function Barra() {
         <Navbar key={expand} expand={expand} className={darkMode ? styles.dark : styles.light} fixed="top" variant="light">
           <Container fluid>
             <Navbar.Brand href="#home">
-              <a class="nav-link navbar-brand" href="/">
+              <a className="nav-link navbar-brand" href="/">
                 <img src='pediloya.png' alt="Logo de PediloYa" width={150} />
               </a>
             </Navbar.Brand>
@@ -68,7 +68,7 @@ function Barra() {
                     {!user && (
                       <Link legacyBehavior href={'/auth/login'}>
                         <div className={`${styles.login}`}>
-                          <a class="nav-link navbar-brand" href="/">
+                          <a className="nav-link navbar-brand" href="/">
                             <img src='login.png' alt='login' width='25px' /> Ingresar
                           </a>
                         </div>
