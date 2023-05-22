@@ -3,8 +3,8 @@ import CardGroup from 'react-bootstrap/CardGroup';
 
 function RandomCards() {
   return (
-    <CardGroup className="m-4 p-4" >
-      <Card className="m-4 p-4" border="light">
+    <CardGroup className="m-4 p-4 text-dark" >
+      <Card className="m-4 p-4 " border="light">
         <Card.Img variant="top" src="https://www.pierandrei.com.ar/wp-content/uploads/2021/02/PAGO-EFECTIVO.png" />
         <Card.Body>
           <Card.Title>Miércoles de 2x1!</Card.Title>
@@ -13,7 +13,7 @@ function RandomCards() {
           </Card.Text>
         </Card.Body>
       </Card>
-      <Card className="m-4 p-4" border="light">
+      <Card className="m-4 p-4 " border="light">
         <Card.Img variant="top" src="https://us.123rf.com/450wm/pepj/pepj1303/pepj130300008/18338417-promoci%C3%B3n-2x1-sello-de-grunge-en-idioma-espa%C3%B1ol.jpg" />
         <Card.Body className="mt-4">
           <Card.Title>15% OFF!!</Card.Title>

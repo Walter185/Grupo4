@@ -10,7 +10,7 @@ function FirstCarousel() {
           src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1/800x400?text=First slide&bg=373940"
           alt="Comidas"
         />
-        <div className="titulos carousel-caption">
+        <div className="titulos carousel-caption position-absolute top-50">
           <h1>¡Pedí lo que quieras!</h1>
           <p>Restaurantes, mercados, farmacias, kioscos y muchos más.</p>
           <Form className="d-flex">
@@ -33,7 +33,7 @@ function FirstCarousel() {
           src="https://images.pexels.com/photos/1441122/pexels-photo-1441122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1/800x400?text=Second slide&bg=282c34"
           alt="Bebidas"
         />
-        <div className="titulos carousel-caption">
+        <div className="titulos carousel-caption position-absolute top-50">
           <h1>¡Pedí lo que quieras!</h1>
           <p>Restaurantes, mercados, farmacias, kioscos y muchos más.</p>
           <Form className="d-flex">
@@ -56,7 +56,7 @@ function FirstCarousel() {
           src="https://images.pexels.com/photos/205961/pexels-photo-205961.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1/800x400?text=Third slide&bg=20232a"
           alt="Postres"
         />
-        <div className="titulos carousel-caption">
+        <div className="titulos carousel-caption position-absolute top-50">
           <h1>¡Pedí lo que quieras!</h1>
           <p>Restaurantes, mercados, farmacias, kioscos y muchos más.</p>
           <Form className="d-flex">
