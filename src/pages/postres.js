@@ -1,9 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
-import Productos from '../components/card/Cards';
-
+import Productos from '@/components/Cards';
 import data from '../data/postres.json';
-import ContenProducto from '../components/card/ContenProducto';
+import ContenProducto from '@/components/ContenProducto';
+
+
 export default function Home() {
 
   return (

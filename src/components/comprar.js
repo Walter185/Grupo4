@@ -1,6 +1,6 @@
 import styles from '@/styles/Comprar.module.css';
 import { useDispatch } from 'react-redux';
-import { addToCart } from '../redux/cart.slice';
+import { addToCart } from './cart.slice';
 
 const Comprar = ({ product }) => {
     const dispatch = useDispatch();
