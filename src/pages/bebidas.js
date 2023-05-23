@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
 import ContenProducto from '../components/card/ContenProducto';
 import Productos from '../components/card/Cards';
+
 import data from '../data/bebida.json';
 
 export default function Home() {
