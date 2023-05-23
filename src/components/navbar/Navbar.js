@@ -53,17 +53,15 @@ function Barra() {
                   <Nav.Link href='/comida'>Comidas</Nav.Link>
                   <Nav.Link href='/bebidas'>Bebidas</Nav.Link>
                   <Nav.Link href='/postres'>Postres</Nav.Link>
-                </Nav>
-
-                {/* ================ CARRITO ================*/}
+                  {/* ================ CARRITO ================*/}
                 <div>
                   <Link href="/cart">
                     <h1> ({getItemsCount()})</h1>
                     <BsCart4 size={30}></BsCart4>
                   </Link>
                 </div>
-                <Navbar.Text>
                   <DarkMode></DarkMode>
+                <Navbar.Text>
                   <ul>
                     {!user && (
                       <Link legacyBehavior href={'/auth/login'}>
@@ -121,6 +119,9 @@ function Barra() {
                   </ul>
 
                 </Navbar.Text>
+                </Nav>
+
+                
               </Offcanvas.Body>
             </Navbar.Offcanvas>
 
