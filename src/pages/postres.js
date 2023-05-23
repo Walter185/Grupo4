@@ -1,8 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
-import ContenProducto from '@/components/Card/ContenProducto';
-import Productos from '@/components/Card/Cards';
+import Productos from '../components/card/Cards';
 import data from '../data/postres.json';
+import ContenProducto from '../components/card/ContenProducto';
 export default function Home() {
 
   return (
