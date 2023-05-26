@@ -10,7 +10,7 @@ export default function DarkMode (){
        
     return(
         <>
-          <Button className="justify-content-end" variant="secondary" size="sm" onClick={ () => {
+          <Button className="ms-5" variant="secondary" size="sm" onClick={ () => {
                     setToggle(!isToggleOn)
                     setDarkmode(isToggleOn);
                 }
