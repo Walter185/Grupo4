@@ -4,7 +4,6 @@ import { useState } from "react";
 import Button from 'react-bootstrap/Button';
 
 export default function DarkMode (){
-
     const { darkMode, setDarkmode }  = useContext(maincontextState)
     let [isToggleOn, setToggle] = useState({darkMode});
        
