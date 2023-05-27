@@ -4,7 +4,7 @@
         "titulo": "Tres Leches",
         "precio": 950.00,
         "imagen":"/postres/tres leche.jpg",
-        "texto": "Bizcocho de vainilla humedecida con leche entrea, leche condesada y leche evaporada cubierto con crema chantilli y canela."
+        "texto": "Bizcocho de vainilla humedecida con leche entera, leche condensada y leche evaporada cubierto con crema chantilli y canela."
     },
     {
         "id": 2,
@@ -18,21 +18,21 @@
         "titulo": "Selva Negra",
         "precio": 850.00,
         "imagen": "/postres/selva negra.jpg",
-        "texto":"Capaa de bizcocho de chocolate húmedo con almibar de licor y relleno y cubierto con crema chantilli y cerezas maceradas, decorado con viruta de chocolate"
+        "texto":"Capas de bizcocho de chocolate húmedo con almibar de licor y relleno y cubierto con crema chantilli y cerezas maceradas, decorado con viruta de chocolate."
     },
     {
         "id": 4,
         "titulo": "Tiramisu",
         "precio": 900.00,
         "imagen": "/postres/tiramisu.jpg",
-        "texto":"Capas de bizcocho bañado en cafe, relleno y cubierto de crema mascarpone y una capa final de cacao en polvo (contiene licor de oporto)"
+        "texto":"Capas de bizcocho bañado en cafe, relleno y cubierto de crema mascarpone y una capa final de cacao en polvo (contiene licor de oporto)."
     },
     {
         "id": 5,
         "titulo": "Torta de Oreo",
         "precio": 1200.00,
         "imagen": "/postres/oreo.jpg",
-        "texto":"Torta helada de oreo y chocolate"
+        "texto":"Torta helada de oreo y chocolate."
     },
     {
         "id": 6,
@@ -43,31 +43,31 @@
     },
     {
         "id": 7,
-        "titulo": "Torta Balcarse",
+        "titulo": "Torta Balcarce",
         "precio": 1120.00,
         "imagen": "/postres/balcarse.jpg",
-        "texto":"Torta balcarse."
+        "texto":"Torta balcarce."
     },
     {
         "id": 8,
         "titulo": "Torta de Piña",
         "precio": 1450.00,
         "imagen": "/postres/piña.jpg",
-        "texto":"Torta volteada de piña"
+        "texto":"Torta volteada de piña."
     },
     {
         "id": 9,
-        "titulo": "Pie de Limon",
+        "titulo": "Lemon Pie",
         "precio": 1400.00,
         "imagen": "/postres/limon.jpg",
-        "texto":"Pie de Limon."
+        "texto":"Lemon pie."
     },
     {
         "id": 10,
         "titulo": "Torta de Ricota",
         "precio": 1200.00,
         "imagen": "/postres/ricota.jpg",
-        "texto":"Torta de ricota y dulce de leche"
+        "texto":"Torta de ricota y dulce de leche."
     }
 
 

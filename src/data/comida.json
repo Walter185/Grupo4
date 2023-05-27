@@ -4,7 +4,7 @@
         "titulo": "Club House",
         "precio": 1740.00,
         "imagen":"/comida/club house con papas.jpg",
-        "texto": "Pollo deshilachado + lechuga + tomate + palta + queso + Jamón + pan molde tostado + salsas a escoger."
+        "texto": "Pollo deshilachado + lechuga + tomate + palta + queso + jamón + pan molde tostado + salsas a escoger."
     },
     {
         "id":2,
@@ -25,7 +25,7 @@
         "titulo": "Pizza con Rúcula",
         "precio": 1350.00,
         "imagen": "/comida/pizza2.jpg",
-        "texto":"Pizza al molde, con salsa, mozarella, tomate y rúcula"
+        "texto":"Pizza al molde, con salsa, mozarella, tomate y rúcula."
     },
     {
         "id":5,
