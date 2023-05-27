@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
-import ContenProducto from '../components/card/ContenProducto';
-import Productos from '../components/card/Cards';
+import ContenProducto from '@/components/ContenProducto';
+import Productos from '@/components/Cards';
 
 import data from '../data/bebida.json';
 
