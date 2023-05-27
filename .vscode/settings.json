@@ -1,4 +1,7 @@
 {
     "vue.codeActions.enabled": false,
-    "genieai.openai.organization": ""
+    "genieai.openai.organization": "",
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "main"
+    ]
 }
