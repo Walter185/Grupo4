@@ -1,7 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
-import ContenProducto from '@/components/Card/ContenProducto';
-import Productos from '@/components/Card/Cards';
+import ContenProducto from '@/components/ContenProducto';
+import Productos from '@/components/Cards';
+
 import data from '../data/bebida.json';
 
 export default function Home() {

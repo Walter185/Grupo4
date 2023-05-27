@@ -10,7 +10,7 @@ import Link from 'next/link';
 import { useSelector } from 'react-redux';
 import { useContext } from 'react';
 import { maincontextState } from '@/context/maincontextprovider';
-import DarkMode from '../darkmode/DarkMode';
+import DarkMode from './DarkMode';
 import { BsCart4 } from "react-icons/bs";
 
 function Barra() {

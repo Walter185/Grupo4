@@ -1,4 +1,4 @@
-import Comprar from "../comprar/comprar";
+import Comprar from "./comprar";
 import styles from '@/styles/Cards.module.css';
 import Image from 'react-bootstrap/Image';
 
