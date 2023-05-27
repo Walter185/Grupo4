@@ -260,7 +260,7 @@ export default function loginMail() {
           </>
         ) : (
           <>
-              <div className="box">
+              <div className="box text-dark">
               <form onSubmit={handleSubmit}>
                   <h3><b><u>Iniciar sesión</u></b></h3>
                       <div className="form-group">
@@ -292,13 +292,13 @@ export default function loginMail() {
                               className="form-control"
                             />
                       </div><br/>
-                      <Button onClick={login} type="button">Login</Button> 
+                      <Button onClick={login} type="button" variant="danger">Login</Button> 
 
                         </form> 
                       <p className="info">
                       No tiene cuenta? <Link href="/auth/register">Registrarse</Link>
                       </p>
-                  <br /><Button onClick={() => GoogleSignIn()} type="button">Iniciar con Google</Button>
+                  <br /><Button onClick={() => GoogleSignIn()} type="button" variant="danger">Iniciar con Google</Button>
              
               <br/><br/><br/>
             </div>

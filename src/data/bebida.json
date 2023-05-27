@@ -4,70 +4,70 @@
         "titulo": "Papelón con Limón",
         "precio":  750.00,
         "imagen":"/bebidas/papelon con limon.jpg",
-        "texto": "Combinación de jugo de melaza de caña de azucarcon un toque de jugo de limon. "
+        "texto": "Combinación de jugo de melaza de caña de azucar con un toque de jugo de limon. "
     },
     {
         "id": 2,
         "titulo": "Exprimido de Naranja",
         "precio":800.00,
         "imagen":"/bebidas/jugo de naranja.jpg",
-        "texto":"Exprimido de naranja dulce"
+        "texto":"Exprimido de naranja dulce."
     },
     {
         "id": 3,
         "titulo": "Coca-Cola",
         "precio": 1200.00,
         "imagen": "/bebidas/coca cola.jpg",
-        "texto":"Gaseosa Coca-Cola 2,25 Lts"
+        "texto":"Gaseosa Coca-Cola 2,25 Lts."
     },
     {
         "id": 4,
         "titulo": "Fanta",
         "precio": 1200.00,
         "imagen": "/bebidas/fanta.jpg",
-        "texto":"Gaseosa Fanta 2,25 Lts sabor a Naranja y Piña"
+        "texto":"Gaseosa Fanta 2,25 Lts sabor a Naranja y Piña."
     },
     {
         "id": 5,
         "titulo": "7up",
         "precio": 1200.00,
         "imagen": "/bebidas/seven up.jpg",
-        "texto":"Gaseosa Seven up 2,25 Lts"
+        "texto":"Gaseosa Seven up 2,25 Lts."
     },
     {
         "id": 6,
         "titulo": "Brahma",
         "precio": 900.00,
         "imagen": "/bebidas/brahma.jpg",
-        "texto":"Cerveza Brahma 1 Lts"
+        "texto":"Cerveza Brahma 1 Lts."
     },
     {
         "id": 7,
         "titulo": "Té de Durazno",
         "precio": 600.00,
-        "imagen": "{/bebidas/te durazno.jpg",
-        "texto": "Té frio con sabor a durazno"
+        "imagen": "/bebidas/te durazno.jpg",
+        "texto": "Té frio con sabor a durazno."
     },
     {
         "id": 8,
-        "titulo": "Moster Energy",
+        "titulo": "Monster Energy",
         "precio": 1600.00,
-        "imagen": "{/bebidas/moster.jpg",
-        "texto": "Moster Energy  473 ml"
+        "imagen": "/bebidas/moster.jpg",
+        "texto": "Moster Energy  473 ml."
     },
     {
         "id": 9,
-        "titulo": "Smirnooff",
+        "titulo": "Smirnoff",
         "precio": 1400.00,
-        "imagen": "{/bebidas/smirnoof.jpg",
-        "texto": "Smirnoof Sabor original 473 ml"
+        "imagen": "/bebidas/smirnoof.jpg",
+        "texto": "Smirnoff Sabor original 473 ml."
     },
     {
         "id": 10,
         "titulo": "Chicha",
         "precio": 950.00,
         "imagen": "./bebidas/chicha.jpg",
-        "texto": "Chicha de pasta con canela en polvo y leche condendada"
+        "texto": "Chicha de pasta con canela en polvo y leche condensada."
     }
 
     
