@@ -12,6 +12,8 @@ import { useContext } from 'react';
 import { maincontextState } from '@/context/maincontextprovider';
 import DarkMode from './DarkMode';
 import { BsCart4 } from "react-icons/bs";
+import Button from 'react-bootstrap/Button';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
 function Barra() {
 
@@ -49,14 +51,14 @@ function Barra() {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="flex-grow-1 justify-content-around">
+                <Nav className="d-flex  flex-grow-1 justify-content-around">
                   <Nav.Link className="mt-4 fs-5" href='/comida'>Comidas</Nav.Link>
                   <Nav.Link className="mt-4 fs-5" href='/bebidas'>Bebidas</Nav.Link>
                   <Nav.Link className="mt-4 fs-5" href='/postres'>Postres</Nav.Link>
-                  <NavDropdown className="mt-4 fs-5" title="Idioma" id="collasible-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">Español</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">English</NavDropdown.Item>
-                  </NavDropdown>
+                  <ButtonGroup className="justify-content-end">
+                    <Button className="mt-4 mb-4 p-1" variant="danger">Inglés</Button>{' '}
+                    <Button className="mt-4 mb-4 p-1" variant="danger">Español</Button>{' '}
+                  </ButtonGroup>
                   {/* ================ CARRITO ================*/}
                 <div className="d-flex text-center">
                   <Link className="text-danger justify-content-end pt-3" href="/cart">
