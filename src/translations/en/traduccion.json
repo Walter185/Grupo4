@@ -1,0 +1,12 @@
+{
+    "navbar": {
+    "barra": "Foods",
+    "bebidas": "Drinks",
+    "postres": "Desseerts"
+
+    },
+
+    "saludos": {
+        "saludo": "hello words"
+    }
+}

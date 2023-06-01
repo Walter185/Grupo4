@@ -1,0 +1,13 @@
+{
+    "navbar": {
+    "barra": "Comidas",
+    "bebidas": "Bebidas",
+    "postres": "Postres"
+
+    },
+
+    "saludos": {
+        "saludo": "hola mundo"
+    }
+
+}

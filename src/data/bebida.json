@@ -46,21 +46,21 @@
         "titulo": "Té de Durazno",
         "precio": 600.00,
         "imagen": "/bebidas/te durazno.jpg",
-        "texto": "Té frio con sabor a durazno."
+        "texto": "Té frio con sabor a durazno"
     },
     {
         "id": 8,
         "titulo": "Monster Energy",
         "precio": 1600.00,
         "imagen": "/bebidas/moster.jpg",
-        "texto": "Moster Energy  473 ml."
+        "texto": "Moster Energy  473 ml"
     },
     {
         "id": 9,
         "titulo": "Smirnoff",
         "precio": 1400.00,
         "imagen": "/bebidas/smirnoof.jpg",
-        "texto": "Smirnoff Sabor original 473 ml."
+        "texto": "Smirnoof Sabor original 473 ml"
     },
     {
         "id": 10,
