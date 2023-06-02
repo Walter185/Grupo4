@@ -1,8 +1,18 @@
 {
     "navbar": {
-    "barra": "Foods",
-    "bebidas": "Drinks",
-    "postres": "Desseerts"
+    "comida": "Foods",
+    "bebida": "Drinks",
+    "postre": "Desseerts",
+    "ingles": "English",
+    "español": "Spanish",
+    "ingresar": "Get into",
+    "hola": "Hello",
+    "favorito": "Favorites",
+    "pedido": "Orders",
+    "dato": "Data",
+    "salir": "Go out",
+    "cupon": "Coupons",
+    "bienvenido": "Welcome to PediloYa"
 
     },
 

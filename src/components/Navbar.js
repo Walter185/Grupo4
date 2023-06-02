@@ -14,8 +14,14 @@ import DarkMode from './DarkMode';
 import { BsCart4 } from "react-icons/bs";
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+
+
 
 function Barra() {
+  /* ===== traductor ===== */
+  const [ t, i18n ] = useTranslation ("traduccion");
 
   /* ====== CARRITO =====*/
   const cart = useSelector((state) => state.cart);
@@ -52,12 +58,22 @@ function Barra() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="d-flex  flex-grow-1 justify-content-around">
-                  <Nav.Link className="mt-4 fs-5" href='/comida'>Comidas</Nav.Link>
-                  <Nav.Link className="mt-4 fs-5" href='/bebidas'>Bebidas</Nav.Link>
-                  <Nav.Link className="mt-4 fs-5" href='/postres'>Postres</Nav.Link>
+                  <Nav.Link className="mt-4 fs-5" href='/comida'>{t("navbar.comida")}</Nav.Link>
+                  <Nav.Link className="mt-4 fs-5" href='/bebidas'>{t("navbar.bebida")}</Nav.Link>
+                  <Nav.Link className="mt-4 fs-5" href='/postres'>{t("navbar.postre")}</Nav.Link>
                   <ButtonGroup className="justify-content-end">
-                    <Button className="mt-4 mb-4 p-1" variant="danger">Inglés</Button>{' '}
-                    <Button className="mt-4 mb-4 p-1" variant="danger">Español</Button>{' '}
+                    <Button 
+                        className="mt-4 mb-4 p-1" 
+                        variant="danger"
+                        onClick={ ()=> i18n.changeLanguage("en")}>{ t ( "navbar.ingles")}
+                    </Button>{' '}
+
+                    <Button 
+                        className="mt-4 mb-4 p-1" 
+                        variant="danger"
+                        onClick={ ()=> i18n.changeLanguage("es")}>{ t ( "navbar.español")}
+                    </Button>{' '}
+
                   </ButtonGroup>
                   {/* ================ CARRITO ================*/}
                 <div className="d-flex text-center">
@@ -72,17 +88,17 @@ function Barra() {
                         <Link legacyBehavior href={'/auth/login'}>
                           <div className={`${styles.login}`}>
                             <a className="nav-link navbar-brand" href="/">
-                              <img src='login.png' alt='login' width='25px' /> Ingresar
+                              <img src='login.png' alt='login' width='25px' /> { t ( "navbar.ingresar")}
                             </a>
                           </div>
                         </Link>
                       )}
                       {user && (
                         <Container className={`${styles.container}`}>
-                          <NavDropdown title="Bienvenido a PediloYa " id="basic-nav-dropdown" className='dropdown-menu-left'>
+                          <NavDropdown title= { t ( "navbar.bienvenido")} id="basic-nav-dropdown" className='dropdown-menu-left'>
                             <NavDropdown.Item href="#action/3.1">
                               <div>
-                                <a>Hola,  {user.displayName}  {user.phoneNumber}</a>
+                                <a>{ t ( "navbar.hola")},  {user.displayName}  {user.phoneNumber}</a>
                                 <img src={user.photoURL}
                                   referrerPolicy='no-referrer'
                                   width='40px'
@@ -90,30 +106,30 @@ function Barra() {
                               </div>
                             </NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">
-                              <a className='font-text'>Favoritos</a>
+                              <a className='font-text'>{ t ( "navbar.favorito")}</a>
                             </NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">
                               <div className="item box-div">
-                                <a className='font-text'>Pedidos</a>
+                                <a className='font-text'>{ t ( "navbar.pedido")}</a>
                               </div>
                             </NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.4">
                               <div className="item box-div">
-                                <a className='font-text'>Cupones</a>
+                                <a className='font-text'>{ t ( "navbar.cupon")}</a>
                               </div>
                             </NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.5">
                             </NavDropdown.Item>
 
                             <NavDropdown.Item href="#action/3.6">
-                              <a href={'/dashboard'}>Datos</a>
+                              <a href={'/dashboard'}>{ t ( "navbar.dato")}</a>
                             </NavDropdown.Item>
                             <NavDropdown.Divider />
 
                             <NavDropdown.Item href="#action/3.7">
                               <Link href={'/auth/logout'}>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width={24}><path d="M160 96c17.7 0 32-14.3 32-32s-14.3-32-32-32H96C43 32 0 75 0 128V384c0 53 43 96 96 96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H96c-17.7 0-32-14.3-32-32l0-256c0-17.7 14.3-32 32-32h64zM504.5 273.4c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22v72H192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32H320v72c0 9.6 5.7 18.2 14.5 22s19 2 26-4.6l144-136z" /></svg>
-                                <span className="label">Salir</span>
+                                <span className="label">{ t ( "navbar.salir")}</span>
                               </Link>
                             </NavDropdown.Item>
 
