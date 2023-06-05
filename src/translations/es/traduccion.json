@@ -17,6 +17,15 @@
 
     },
 
+    "card":{
+        "titulo": "Producto"
+
+    },
+
+    "carrusel":{
+        "encabezado": "¡Pedí lo que quieras!"
+    },
+
     "saludos": {
         "saludo": "hola mundo"
     }
