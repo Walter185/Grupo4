@@ -1,7 +1,13 @@
 import Carousel from 'react-bootstrap/Carousel';
 import { Button, Form } from 'react-bootstrap';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 function FirstCarousel() {
+  /* ===== traductor ===== */
+  const [ t, i18n ] = useTranslation ("traduccion");
+
+
   return (
     <Carousel className="m-4" style={{width: "1200px"}}>
       <Carousel.Item>
@@ -11,20 +17,20 @@ function FirstCarousel() {
           alt="Comidas"
         />
         <div className="titulos carousel-caption position-absolute top-50">
-          <h1>¡Pedí lo que quieras!</h1>
-          <p>Restaurantes, mercados, farmacias, kioscos y muchos más.</p>
+          <h1>{t("carrusel.encabezado")}</h1>
+          <p>{t("carrusel.categoria")}</p>
           <Form className="d-flex">
           <Form.Control
             type="search"
-            placeholder="Ingrese su búsqueda..."
+            placeholder={t("carrusel.ibusqueda")}
             className="me-2"
             aria-label="Search"
           />
-          <Button variant="outline-warning">Buscar</Button>
+          <Button variant="outline-warning">{t("carrusel.buscar")}</Button>
           </Form>
         </div>
         <Carousel.Caption>
-          <h3>Comidas</h3>
+          <h3>{t("navbar.comida")}</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -34,20 +40,20 @@ function FirstCarousel() {
           alt="Bebidas"
         />
         <div className="titulos carousel-caption position-absolute top-50">
-          <h1>¡Pedí lo que quieras!</h1>
-          <p>Restaurantes, mercados, farmacias, kioscos y muchos más.</p>
+          <h1>{t("carrusel.encabezado")}</h1>
+          <p>{t("carrusel.categoria")}</p>
           <Form className="d-flex">
           <Form.Control
             type="search"
-            placeholder="Ingrese su búsqueda..."
+            placeholder={t("carrusel.ibusqueda")}
             className="me-2"
             aria-label="Search"
           />
-          <Button variant="outline-warning">Buscar</Button>
+          <Button variant="outline-warning">{t("carrusel.buscar")}</Button>
           </Form>
         </div>
         <Carousel.Caption>
-          <h3>Bebidas</h3>
+          <h3>{t("navbar.bebida")}</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -57,20 +63,20 @@ function FirstCarousel() {
           alt="Postres"
         />
         <div className="titulos carousel-caption position-absolute top-50">
-          <h1>¡Pedí lo que quieras!</h1>
-          <p>Restaurantes, mercados, farmacias, kioscos y muchos más.</p>
+          <h1>{t("carrusel.encabezado")}</h1>
+          <p>{t("carrusel.categoria")}</p>
           <Form className="d-flex">
           <Form.Control
             type="search"
-            placeholder="Ingrese su búsqueda..."
+            placeholder={t("carrusel.ibusqueda")}
             className="me-2"
             aria-label="Search"
           />
-          <Button variant="outline-warning">Buscar</Button>
+          <Button variant="outline-warning">{t("carrusel.buscar")}</Button>
           </Form>
         </div>
         <Carousel.Caption>
-          <h3>Postres</h3>
+          <h3>{t("navbar.postre")}</h3>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

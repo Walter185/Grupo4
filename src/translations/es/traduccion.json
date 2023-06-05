@@ -23,8 +23,17 @@
     },
 
     "carrusel":{
-        "encabezado": "¡Pedí lo que quieras!"
+        "encabezado": "¡Pedí lo que quieras!",
+        "categoria": "Restaurantes, Mercados, Farmacias, Kioscos y muchos más.",
+        "buscar": "Buscar",
+        "ibusqueda": "Ingrese su busqueda...."
     },
+
+    "randomcards": {
+        "miercoles": "Miércoles de 2x1!",
+        "promo": "Todos los miércoles 2x1 en postres..."
+    },
+
 
     "saludos": {
         "saludo": "hola mundo"
