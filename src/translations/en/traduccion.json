@@ -13,16 +13,22 @@
     "salir": "Logout",
     "cupon": "Coupons",
     "bienvenido": "Welcome to PediloYa"
-
     },
 
     "card":{
         "titulo": "Product"
-
     },
 
     "carrusel":{
-        "encabezado": "Ask what you want!"
+        "encabezado": "Ask what you want!",
+        "categoria": "Restaurants, Markets, Pharmacies, Kiosks and many more.",
+        "buscar": "Search",
+        "ibusqueda": "Enter your search..... "
+    },
+
+    "randomcards": {
+        "miercoles": "2x1 Wednesday!!!",
+        "promo": "Every Wednesday 2 x1 in desserts..."
     },
 
 
