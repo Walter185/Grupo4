@@ -75,6 +75,7 @@ function Barra() {
                     </Button>{' '}
 
                   </ButtonGroup>
+
                   {/* ================ CARRITO ================*/}
                 <div className="d-flex text-center">
                   <Link className="text-danger justify-content-end pt-3" href="/cart">

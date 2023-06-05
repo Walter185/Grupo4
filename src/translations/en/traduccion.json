@@ -5,16 +5,26 @@
     "postre": "Desseerts",
     "ingles": "English",
     "español": "Spanish",
-    "ingresar": "Get into",
+    "ingresar": "Login",
     "hola": "Hello",
     "favorito": "Favorites",
     "pedido": "Orders",
     "dato": "Data",
-    "salir": "Go out",
+    "salir": "Logout",
     "cupon": "Coupons",
     "bienvenido": "Welcome to PediloYa"
 
     },
+
+    "card":{
+        "titulo": "Product"
+
+    },
+
+    "carrusel":{
+        "encabezado": "Ask what you want!"
+    },
+
 
     "saludos": {
         "saludo": "hello words"

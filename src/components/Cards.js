@@ -3,6 +3,7 @@ import styles from '@/styles/Cards.module.css';
 import Image from 'react-bootstrap/Image';
 
 function Productos (props) {
+
     return(
         <>
 
