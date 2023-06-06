@@ -21,6 +21,17 @@
 
     },
 
+    "login":{
+        "encabezado":"Home",
+        "titulo": "Sign In",
+        "btn":"Login",
+        "registrarse":"Register",
+        "noregistrado":"Don't have an account yet?",
+        "google":"Login with Google",
+        "password":"Password"
+
+    },
+
     "carrusel":{
         "encabezado": "Ask what you want!"
     },

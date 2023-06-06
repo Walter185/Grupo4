@@ -11,6 +11,8 @@ import styled, { keyframes } from 'styled-components';
 import Link from 'next/link';
 import { Button } from 'react-bootstrap';
 import { useRouter } from 'next/router';
+import { useTranslation } from 'react-i18next';
+
 
 const MainNav = styled.div`
   font-size: 14px;
@@ -44,6 +46,7 @@ const Div = styled.div`
   justify-content: center;
   align-items: center;
   padding: 16px;
+  margin-top: 60px;
 
   p {
     line-height: 1.6;
@@ -210,8 +213,8 @@ export default function loginMail() {
   const route = useRouter();
   const [loginEmail, setLoginEmail] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
-
   const [user, setUser] = useState({});
+  const [ t, i18n ] = useTranslation ("traduccion");
 
   const login = async () => {
     try {
@@ -244,12 +247,6 @@ export default function loginMail() {
 
   return (
     <>
-    <Head>
-    <title>Inicar sesión</title>
-      </Head>
-      <MainNav>
-        <Link href="/">Home</Link> / <span>Iniciar sesión</span>
-      </MainNav>
       <Div>
         {user ? (
           <>
@@ -262,7 +259,7 @@ export default function loginMail() {
           <>
               <div className="box text-dark">
               <form onSubmit={handleSubmit}>
-                  <h3><b><u>Iniciar sesión</u></b></h3>
+                  <h3><b><u> { t ( "navbar.ingresar")}</u></b></h3>
                       <div className="form-group">
                           <label>Email</label>
                           <input
@@ -278,7 +275,7 @@ export default function loginMail() {
                               />
                       </div>
                       <div className="form-group">
-                      <label>Password</label>
+                      <label> { t ( "login.password")}</label>
                             <input
                                 type="password"
                                 name="password"
@@ -292,13 +289,13 @@ export default function loginMail() {
                               className="form-control"
                             />
                       </div><br/>
-                      <Button onClick={login} type="button" variant="danger">Login</Button> 
+                      <Button onClick={login} type="submit">{t ( "login.btn") }</Button> 
 
                         </form> 
                       <p className="info">
-                      No tiene cuenta? <Link href="/auth/register">Registrarse</Link>
+                      {t ("login.noregistrado")} <Link href="/auth/register">{t ( "login.registrarse") }</Link>
                       </p>
-                  <br /><Button onClick={() => GoogleSignIn()} type="button" variant="danger">Iniciar con Google</Button>
+                  <br /><Button onClick={() => GoogleSignIn()} type="submit">{t ("login.google")}</Button>
              
               <br/><br/><br/>
             </div>
