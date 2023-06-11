@@ -6,6 +6,8 @@ import data from '../data/bebida.json';
 import RandomCards from '@/components/RandomCards';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+//import data from '../translations/en/bebida.json';
+//import data from '../translations/es/bebida.json';
 
 export default function Home() {
   /* ===== traductor ===== */
@@ -28,13 +30,13 @@ export default function Home() {
         <br></br>
         <ContenProducto>
 
-          {data.map( bebidas =>
+          {data.map( bebida =>
           <Productos
-            id={bebidas.id}
-            titulo = {bebidas.titulo}
-            precio = {bebidas.precio}
-            imagen = {bebidas.imagen}
-            texto = {bebidas.texto}
+            id={bebida.id}
+            titulo = {bebida.titulo}
+            precio = {bebida.precio}
+            imagen = {bebida.imagen}
+            texto = {bebida.texto}
                    
           />
             

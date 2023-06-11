@@ -4,8 +4,14 @@ import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Image from 'react-bootstrap/Image';
 import styles from '@/styles/Footer.module.css';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 function FooterGrid() {
+
+  /* ===== traductor ===== */
+  const [ t, i18n ] = useTranslation ("traduccion");
+
   return (
     <Container className={ styles.container}>
       <Row>
@@ -22,7 +28,7 @@ function FooterGrid() {
         </Col>
         <Col>
           <ListGroup>
-            Nuestras redes sociales:
+          {t("redes.sociales")}
             <ListGroup.Item className={styles.ListGroup}>
               <Image  width={20} src="./facebook.png"/>     Facebook
             </ListGroup.Item >

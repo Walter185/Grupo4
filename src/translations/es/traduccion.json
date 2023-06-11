@@ -43,7 +43,15 @@
 
     "randomcards": {
         "miercoles": "Miércoles de 2x1!",
-        "promo": "Todos los miércoles 2x1 en postres..."
+        "promo": "Todos los miércoles 2x1 en postres...",
+        "promo2": "Todos los jueves y viernes 15% OFF en envíos de 20 a 23hs!!",
+        "domingo": "Domingo Turbo",
+        "promo3": "Los domingos podes hacer tu pedido con la opción turbo y que llegue mas rápido!"
+    },
+
+
+    "redes": {
+        "sociales": "Nuestras redes sociales:"
     },
 
 

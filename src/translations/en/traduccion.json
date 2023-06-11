@@ -39,7 +39,15 @@
 
     "randomcards": {
         "miercoles": "2x1 Wednesday!!!",
-        "promo": "Every Wednesday 2 x1 in desserts..."
+        "promo": "Every Wednesday 2 x1 in desserts...",
+        "promo2": "Every Thursday and Friday 15% OFF on shipments from 8:00 p.m. to 11:00 p.m.!!",
+        "domingo": "Turbo Sunday",
+        "promo3": "On Sundays you can place your order with the turbo option and get it faster!"
+    },
+
+
+    "redes": {
+        "sociales": "Our social networks:"
     },
 
 
