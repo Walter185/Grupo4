@@ -26,12 +26,23 @@
         "encabezado":"Inicio",
         "titulo": "Iniciar sesión",
         "btn":"Ingresar",
+        "nombre":"Nombre",
+        "email":"Correo",
         "registrarse":"Registrarse",
         "noregistrado":"Aún no tiene cuenta?",
         "google":"Iniciar con Google",
         "password":"Contraseña"
-
-
+    },
+    "register":{
+        "encabezado":"Inicio",
+        "titulo": "Registrarse",
+        "btn":"Ingresar",
+        "nombre":"Nombre",
+        "email":"Correo",
+        "registrarse":"Registrarse",
+        "noregistrado":"Aún no tiene cuenta?",
+        "google":"Iniciar con Google",
+        "password":"Contraseña"
     },
     
     "carrusel":{
