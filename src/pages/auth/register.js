@@ -114,21 +114,22 @@ export default function loginMail() {
              <h3><b><u>{ t ( "register.titulo")}</u></b></h3>
 
                 <div className="form-group">
-                <label>{ t ( "login.nombre")}</label>
+                      <label>{ t ( "login.nombre")}</label>
                       <input
                         placeholder={ t ( "login.nombre")}
                         required
+                        type='text'
                         onChange={(event) => {
                           setRegisterName(event.target.value)
                         }}
-                        className="form-control"
-                      />
+                        className="form-control"/>
                 </div>
                 <div className="form-group">
                 <label>{ t ( "login.email")}</label>
                       <input
                         placeholder={ t ( "login.email")}
                         required
+                        type='email'
                         onChange={(event) => {
                         setRegisterEmail(event.target.value)
                         }}
@@ -140,6 +141,7 @@ export default function loginMail() {
                       <input
                         placeholder={ t ( "login.password")}
                         required
+                        type='password'
                         minLength={6}
                         onChange={(event) => {
                         setRegisterPassword(event.target.value)
