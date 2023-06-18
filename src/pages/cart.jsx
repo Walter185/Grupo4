@@ -20,6 +20,7 @@ const CartPage = () => {
 
   return (
     <div className={styles.container}>
+      <br></br>
       {cart.length === 0 ? (
         <h1>Tu carrito está vacío.</h1>
       ) : (
