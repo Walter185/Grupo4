@@ -23,11 +23,24 @@
         "encabezado":"Home",
         "titulo": "Sign In",
         "btn":"Login",
+        "email":"Mail",
+        "nombre":"Name",
         "registrarse":"Register",
         "noregistrado":"Don't have an account yet?",
         "google":"Login with Google",
         "password":"Password"
 
+    },
+    "register":{
+        "encabezado":"Home",
+        "titulo": "Register",
+        "btn":"Login",
+        "email":"Mail",
+        "nombre":"Name",
+        "registrarse":"Register",
+        "noregistrado":"Don't have an account yet?",
+        "google":"Login with Google",
+        "password":"Password"
     },
 
     "carrusel":{

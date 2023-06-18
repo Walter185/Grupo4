@@ -1,0 +1,25 @@
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    margin-top: 40px;
+    color: black;
+    font-size: 14px;
+    background-color: #f4f4f4;
+    padding: 16px;
+    text-align: center;
+  }
+
+  .box {
+    border: 1px #eee solid;
+    max-width: 500px;
+    width: 100%;
+    background-color: white;
+    padding: 32px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  }

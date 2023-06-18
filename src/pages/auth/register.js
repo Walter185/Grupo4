@@ -7,172 +7,13 @@ import {  signInWithPopup,
         } from "firebase/auth";
 import { useState }  from 'react';
 import Link from 'next/link';
-import Head from 'next/head';
-import styled, { keyframes } from 'styled-components';
 import { auth } from '../../utils/firebase';
 import { Button } from 'react-bootstrap';
 import { useRouter } from 'next/router';
+import styles from '@/styles/Register.module.css';
+import { FaGoogle } from "react-icons/fa";
+import { useTranslation } from 'react-i18next';
 
-const MainNav = styled.div`
-  font-size: 14px;
-  background-color: #f4f4f4;
-  padding: 16px;
-  text-align: center;
-
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-
-  span {
-    color: #999;
-  }
-`;
-
-const rotation = keyframes`
-  from {
-        transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }    
-`;
-
-const Div = styled.div`
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 16px;
-
-  p {
-    line-height: 1.6;
-
-    .bold {
-      font-weight: 600;
-    }
-  }
-
-  .box {
-    border: 1px #eee solid;
-    max-width: 500px;
-    width: 100%;
-    background-color: white;
-    padding: 32px;
-    margin: auto;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
-
-    .title {
-      margin-top: 16px;
-      text-align: center;
-
-      .icon {
-        filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.2));
-      }
-    }
-
-    .server {
-      border: 1px #ff4646 solid;
-      color: #ff4646;
-      border-radius: 6px;
-      font-size: 14px;
-      padding: 13px;
-      margin-top: 24px;
-      text-align: center;
-    }
-
-    .form {
-      margin-top: 32px;
-      font-size: 14px;
-
-      .form-control {
-        margin-bottom: 20px;
-
-        input {
-          display: block;
-          font: inherit;
-          color: inherit;
-          width: 100%;
-          padding: 13px 16px;
-          outline: none;
-          border: 1px #ccc solid;
-          border-radius: 6px;
-
-          &::placeholder {
-            color: #aaa;
-          }
-
-          &:focus {
-            border-color: #4a00e0;
-          }
-        }
-
-        .hint {
-          font-size: 13px;
-          margin-top: 2px;
-          margin-left: 4px;
-          color: #ff4646;
-          display: none;
-        }
-
-        &.error {
-          input {
-            border-color: #ff4646;
-          }
-
-          .hint {
-            display: block;
-          }
-        }
-      }
-
-        .loader {
-          width: 18px;
-          height: 18px;
-          border: 2px solid #fff;
-          border-bottom-color: transparent;
-          border-radius: 50%;
-          display: block;
-          animation: ${rotation} 1s linear infinite;
-        }
-      }
-    }
-
-    .info {
-      margin-top: 32px;
-      margin-bottom: 16px;
-      text-align: center;
-      font-size: 14px;
-
-      a {
-        text-decoration: none;
-        color: #4a00e0;
-
-        @media (hover: hover) {
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-
-        @media (hover: none) {
-          &:active {
-            text-decoration: underline;
-          }
-        }
-      }
-    }
-  }
-
-  @media (max-width: 640px) {
-    .box {
-      border: none;
-      box-shadow: none;
-      padding: 16px;
-    }
-  }
-`;
 
 export default function loginMail() {
   const route = useRouter();
@@ -180,6 +21,7 @@ export default function loginMail() {
   const [registerPassword, setRegisterPassword] = useState("");
   const [registerName, setRegisterName] = useState("");
   const [user, setUser] = useState({});
+  const [ t, i18n ] = useTranslation ("traduccion");
   const [serverErrorMessage, setServerErrorMessage] = useState('');
 
   const nameInputHandler = (ev) => {
@@ -256,13 +98,8 @@ export default function loginMail() {
 
   return (
  <>
-       <Head>
-        <title>Registrarse</title>
-      </Head>
-      <MainNav>
-        <Link href="/">Home</Link> / <span>Registrarse</span>
-      </MainNav>
-      <Div>
+      <br></br>
+      <div className={styles.container}>
         {user ? (
           <>
             <p>
@@ -272,14 +109,14 @@ export default function loginMail() {
           </>
         ) : (
           <>
-          <div className="box">
+              <div className={styles.box}>
             <form onSubmit={handleSubmit}>
-             <h3><b><u>Registrarse</u></b></h3>
+             <h3><b><u>{ t ( "register.titulo")}</u></b></h3>
 
                 <div className="form-group">
-                <label>Nombre</label>
+                <label>{ t ( "login.nombre")}</label>
                       <input
-                        placeholder="Nombre..."
+                        placeholder={ t ( "login.nombre")}
                         required
                         onChange={(event) => {
                           setRegisterName(event.target.value)
@@ -288,9 +125,9 @@ export default function loginMail() {
                       />
                 </div>
                 <div className="form-group">
-                <label>Email</label>
+                <label>{ t ( "login.email")}</label>
                       <input
-                        placeholder="Email..."
+                        placeholder={ t ( "login.email")}
                         required
                         onChange={(event) => {
                         setRegisterEmail(event.target.value)
@@ -299,9 +136,9 @@ export default function loginMail() {
                       />
                 </div>
                 <div className="form-group">
-                <label>Password</label>
+                <label>{ t ( "login.password")}</label>
                       <input
-                        placeholder="Password..."
+                        placeholder={ t ( "login.password")}
                         required
                         minLength={6}
                         onChange={(event) => {
@@ -310,18 +147,18 @@ export default function loginMail() {
                         className="form-control"
                       />
               <br />   </div>
-               <a> </a><Button onClick={register} type="submit">Registrarse</Button>
+               <a> </a><Button onClick={register} type="submit">{ t ( "register.titulo")}</Button>
            </form>
               <p className="info">
-                Do you have an account? <Link href="/auth/login">Sign In</Link>
+              {t ("login.noregistrado")}  <Link href="/auth/login">{ t ( "login.titulo")}</Link>
               </p><br/>
-              <Button onClick={() => GoogleSignIn()} type="submit">Iniciar con Google</Button>
+              <Button onClick={() => GoogleSignIn()} type="submit"><a><FaGoogle/> {t ("login.google")}</a></Button>
 
             <br/>
         </div>
         </>
         )}
-      </Div>
+      </div>
     </>
   );
 }
