@@ -2,7 +2,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
 import Carousel from '@/components/Carousel';
 import RandomCards from '@/components/RandomCards';
-import Chat from '@/components/Chat';
 import styles from '@/styles/Home.module.css';
 import MainContextProvider, { maincontextState } from '@/context/maincontextprovider';
 import Barra from '@/components/Navbar';
@@ -23,7 +22,6 @@ export default function Home() {
         <Carousel />
         <RandomCards />        
       </main>
-        <Chat />
         </MainContextProvider>
       </div>
   )

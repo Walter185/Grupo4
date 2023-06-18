@@ -2,6 +2,7 @@ import { maincontextState } from "@/context/maincontextprovider";
 import { useContext } from "react";
 import { useState } from "react";
 import Button from 'react-bootstrap/Button';
+import styles from '@/styles/DarkMode.module.css'
 
 export default function DarkMode (){
     const { darkMode, setDarkmode }  = useContext(maincontextState)
@@ -9,12 +10,12 @@ export default function DarkMode (){
        
     return(
         <>
-          <Button className="ms-5" variant="secondary" size="sm" onClick={ () => {
+          <Button className={styles.btn} onClick={ () => {
                     setToggle(!isToggleOn)
                     setDarkmode(isToggleOn);
                 }
             }>
-                { isToggleOn ? 'Encendido': 'Apagado'}
+                { isToggleOn ? 'OFF': 'ON'}
           </Button>
         </>
     )

@@ -4,21 +4,18 @@
     height: auto;
     display: inline-flex;
     align-items: center;
-    color: wheat;
   }
   
 
   .light {
-    background-color: wheat;
+    background-color: #fcf7f7;
   }
   
   .dark {
-    background-color: rgb(52, 52, 52);
+    background-color: rgb(148, 148, 148);
     
   }
-  .nav-link {
-    color: white;
-  }
+
 
   
   .pedidosya_name_logo{
@@ -41,91 +38,93 @@
     }
   
     
-  .nav-link {
-    color: bisque !important;
-    font-size: larger;
-    padding: 20px;
-    text-align: center;
-    display: inline-flex;
+
+  
+  .titulo{
+    color:black !important;
+  }
+
+.links{
+  color: rgb(66, 65, 65);
+  font-weight: bold;
+  justify-content: center;
+  font-size: larger;
+  text-align: center;
+  display: inline-flex;
+}
+.links:hover{
+  color: rgb(255, 0, 0);
+}
+
+.logeo{
+  text-align: center;
+  margin-top: 15px;
+  color: black;
+}
+
+@media screen and (min-width: 0) {
+  .links {
+    padding: 2px;
+    margin-top: 0;
+    justify-content: left;
+}
+.btnEn{
+  width: 80px;
+  background-color: blue  ;
+}
+.btnEs{
+  width: 80px;
+  background-color: green;
+}
+.btnEn:hover{
+  background-color: transparent  ;
+  color: black;
+}
+.btnEs:hover{
+  background-color: transparent;
+  color: black;
+}
+.gpobtn{
+  flex-direction: column;
+}
+}
+@media screen and (min-width: 720px) {
+  .links {
+    padding: 25px;
+    margin-top: 10px;
+  }
+  .btnEn{
+    padding: 1rem;
+    margin-top: 20px;
+    height: fit-content;
+    background-color: blue  ;
+  }
+  .mode{
+    padding: 1rem;
+    margin-top: 20px;
+    height: fit-content;
+    background-color: orange  ;
 
   }
-  /*
-  .dropdown-toggle {
-    white-space: nowrap;
-    margin-top: 8px;
-    margin-left: 80px;
+  .btnEs{
+    padding: 1rem;
+    margin-top: 20px;
+    height: fit-content;
+    background-color: green;
   }
-  
-    .navbar_amount{
-    align-self:center;
-     margin-left:15px;
-    }
-  
-    .search-input{
-      background-color: #f7f7f7;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      height: 48px;
-      border-radius: 5px;
-      display: flex;
-      flex-direction: row;
+  .btnEn:hover{
+    padding: 1rem;
+    height: fit-content;
+    background-color: transparent  ;
+    color: black;
   }
-  
-  .search-input .lupa{
-    width: 35px;
-    height: 35px;
-    color: var(--color);;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .btnEs:hover{
+    padding: 1rem;
+    height: fit-content;
+    background-color: transparent;
+    color: black;
   }
-  
-  .search-input .input-text{
-    font-size: 24px;
-    width: 100%;
+  .gpobtn{
+    flex-direction: row;
   }
-  
-  
-    .button {
-      padding-left: 30px !important;
-      justify-items: space-between;
-    }
-  
-    .address-menu{
-      max-width: 200px;
-      height: auto;
-      display: flex;
-      flex-direction: row;
-      color: var(--p-color);
-      margin-top: 20px;
-      margin-left: 20em;
-  }
-  
-  
-  .btn-save{
-      width: 80%;
-      font-weight: 600;
-      height: 50px;
-  }
-  
-  #overlay-address {
-      position: fixed; /* Sit on top of the page content */
-      /* display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%; /* Full width (cover the whole page) */
-      /* height: 100%; /* Full height (cover the whole page) */
-    
-      
-/*   
-  .address-menu-content{
-      margin-top: 10%;
-      display: flex;
-      width: 100%;
-      position: relative;
-      fill: var(--color);
-      height: 100%;
-      align-items: center;
-      flex-direction: column;
-  } */
+}

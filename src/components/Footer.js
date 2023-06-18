@@ -4,17 +4,22 @@ import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Image from 'react-bootstrap/Image';
 import styles from '@/styles/Footer.module.css';
-import React from 'react';
+import React, { useContext } from 'react';
 import { useTranslation } from 'react-i18next';
+import { maincontextState } from '@/context/maincontextprovider';
 
 function FooterGrid() {
+  let context = useContext(maincontextState);
+    let darkMode = context.darkMode;
+
 
   /* ===== traductor ===== */
   const [ t, i18n ] = useTranslation ("traduccion");
 
   return (
+    <>
     <Container className={ styles.container}>
-      <Row>
+      <Row className={styles.foot}>
         <Col className='flex-column justify-content-center'>
           <h5>
             {' '}
@@ -42,6 +47,7 @@ function FooterGrid() {
         </Col>
       </Row>
     </Container>
+    </>    
   );
 }
 

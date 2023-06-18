@@ -24,3 +24,11 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
   }
 
+  .light {
+    background-color: #fcf7f7;
+  }
+  
+  .dark {
+    background-color: rgb(148, 148, 148);
+    
+  }
