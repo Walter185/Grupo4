@@ -52,27 +52,26 @@ function Barra() {
               placement="end"
             >
               <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`} className={styles.titulo}>
                   PediloYa
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="d-flex  flex-grow-1 justify-content-around">
-                  <Nav.Link className="mt-4 fs-5" href='/comida'>{t("navbar.comida")}</Nav.Link>
-                  <Nav.Link className="mt-4 fs-5" href='/bebidas'>{t("navbar.bebida")}</Nav.Link>
-                  <Nav.Link className="mt-4 fs-5" href='/postres'>{t("navbar.postre")}</Nav.Link>
-                  <ButtonGroup className="justify-content-end">
+                  <Nav.Link className={styles.links} href='/comida'>{t("navbar.comida")}</Nav.Link>
+                  <Nav.Link className={styles.links} href='/bebidas'>{t("navbar.bebida")}</Nav.Link>
+                  <Nav.Link className={styles.links} href='/postres'>{t("navbar.postre")}</Nav.Link>
+                  <ButtonGroup className={styles.gpobtn}>
                     <Button 
-                        className="mt-4 mb-4 p-1" 
-                        variant="danger"
+                        className={styles.btnEn} 
                         onClick={ ()=> i18n.changeLanguage("en")}>{ t ( "navbar.ingles")}
                     </Button>{' '}
 
                     <Button 
-                        className="mt-4 mb-4 p-1" 
-                        variant="danger"
+                        className={styles.btnEs} 
                         onClick={ ()=> i18n.changeLanguage("es")}>{ t ( "navbar.español")}
                     </Button>{' '}
+                  <DarkMode/>
 
                   </ButtonGroup>
 
@@ -82,8 +81,7 @@ function Barra() {
                     <BsCart4 size={25}></BsCart4>
                     <h4 className="disabled"> ({getItemsCount()})</h4>
                   </Link>
-                  <Navbar.Text className="justify-content-end">
-                    <DarkMode></DarkMode>
+                  <Navbar.Text className={styles.logeo}>
                     <ul className="justify-content-end">
                       {!user && (
                         <Link legacyBehavior href={'/auth/login'}>

@@ -1,6 +1,6 @@
 body, html {
   height: 100%;
-  background-color: rgb(133, 121, 114);
+  background-color: #e7e7e7;
   padding: 0px;
   font-size: 15px;
   color:beige;
@@ -10,4 +10,14 @@ body, html {
 }
 * {
   box-sizing: border-box;
+}
+
+.light {
+  background-color: #e7e7e7;
+  ;
+}
+
+.dark {
+  background-color: rgb(148, 148, 148);
+  
 }
