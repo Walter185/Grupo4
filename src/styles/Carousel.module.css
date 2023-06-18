@@ -1,7 +1,9 @@
-.light {
-    background-color: wheat;
-  }
-  
-  .dark {
-    background-color: black;
-  }
+.container {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.imagenes{
+  width: 100vw;
+  height: 30rem;
+}
